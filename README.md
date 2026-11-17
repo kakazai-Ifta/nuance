@@ -92,4 +92,5 @@ review text column works.
 - Treat the output as decision support, not as a verdict: a person approves every recommendation.
 
 ## Team
-<ADD TEAM MEMBER NAMES HERE>
+SIMRAT KHALSA 
+IFTA KAKAZAI
