@@ -73,15 +73,20 @@ button_slot = st.container()     # the "How Nuance works" button goes here (fill
 # ---------------------------------------------------------------
 PRESETS = {
     "Skincare (Dior on Sephora)": {
-        "product": "Dior Capture Totale and Cica skincare (eye serum, creams, balm), sold at Sephora",
-        "brand": "Brand: Dior, a French luxury house, with its Capture Totale and Cica skincare lines, sold at Sephora.\n"
-                 "Brand promises: visible anti-aging results (firmer skin, fewer wrinkles), luxurious texture, high-end quality, gentle repair for stressed skin.\n"
-                 "Audience: adults who buy premium anti-aging skincare and expect luxury-level results for the price.",
-        "topics": "results: visible effect on wrinkles, firmness, brightness, or no effect at all\n"
+        "product": "Dior skincare sold at Sephora: Capture Totale Super Potent Eye Serum, Capture Totale Super Potent Rich Cream, Capture Totale firming cream, and Cica Recover Balm",
+        "brand": "Brand: Dior, a French luxury house. Skincare lines: Capture Totale (anti-ageing, \"backed by over 40 years of stem cell research\") and Cica (repair for stressed skin). Sold at Sephora at premium prices.\n"
+                 "Brand promises:\n"
+                 "- Capture Totale Super Potent Eye Serum: eyes look younger, less puffiness from the first week, fewer dark circles and fine lines, firmer and brighter eye contour, hydration, a fresh cooling feel, applied with the 360 Cryo-Flex massaging applicator.\n"
+                 "- Capture Totale Super Potent Rich Cream: rich texture, age-defying correction of wrinkles and firmness, \"seals in\" benefits.\n"
+                 "- Capture Totale firming cream: firmer, more visibly revitalised skin.\n"
+                 "- Cica Recover Balm: regenerating multi-use balm for face and body, long-lasting hydration, soothes discomfort, suitable even for the most sensitive skin, no oily or sticky film, no synthetic fragrance.\n"
+                 "Audience: adults who buy premium anti-ageing skincare and expect luxury-level, visible results for the price.",
+        "topics": "results: visible effect on wrinkles, firmness, dark circles, puffiness, glow, or no visible effect\n"
+                  "hydration: moisture, nourishment, dryness\n"
                   "texture: how it feels on the skin, rich, heavy, greasy, sticky or light\n"
+                  "scent: smell or fragrance, too strong, perfume-like, fragrance-free expectations\n"
                   "irritation: breakouts, burning, redness, allergic reactions\n"
-                  "scent: smell of the product\n"
-                  "packaging: jar, pump, tube, hygiene, leaking\n"
+                  "packaging: jar, pump, bottle, applicator, hygiene, leaking\n"
                   "price: cost and value for money",
     },
     "Hair diffuser (Curly Co)": {
@@ -136,8 +141,21 @@ with st.sidebar:
         if uploaded is not None and uploaded.name.lower().endswith(".csv"):
             table = pd.read_csv(uploaded)
             columns = list(table.columns)
-            default_index = columns.index("text") if "text" in columns else 0
+            # Guess the review text column: a usual name, otherwise the text column with the longest entries
+            usual_names = ["text", "review_text", "review", "reviews", "review_body", "body", "comment", "content"]
+            found = [name for name in columns if name.lower() in usual_names]
+            if found:
+                default_index = columns.index(found[0])
+            else:
+                lengths = {name: table[name].astype(str).str.len().mean() for name in columns if not pd.api.types.is_numeric_dtype(table[name])}
+                default_index = columns.index(max(lengths, key=lengths.get)) if lengths else 0
             text_column = st.selectbox("Which column has the review text?", columns, index=default_index)
+
+            # Warn if the chosen column looks like titles instead of full reviews
+            average_length = table[text_column].dropna().astype(str).str.len().mean()
+            if average_length < 60:
+                st.warning(f"The entries in this column are very short (about {round(average_length)} characters). "
+                           "Is this the full review text, and not a title?")
 
             # Optional: keep only one brand (useful when the file has many brands)
             brand_options = ["(all brands)"] + columns
@@ -265,7 +283,7 @@ if run:
             priority_table = make_priority_table(results)
             briefing = []
             if len(priority_table) > 0:
-                briefing = make_briefing(priority_table, info, brand_context)
+                briefing = make_briefing(priority_table, info, brand_context, topics_text=topics_text)
 
             runs[name] = {"reviews": reviews, "results": results,
                           "priority_table": priority_table, "briefing": briefing}
@@ -344,6 +362,8 @@ def show_product(name, run_data):
         )
 
     # The briefing: one card per topic, with a human decision
+    if len(briefing) > 0:
+        st.caption("Suggested actions are ideas for a human to review. Any detail in them that the customers did not write is the AI's suggestion, not a finding.")
     for item in briefing:
         with st.container(border=True):
             st.markdown(f"### {item['topic'].capitalize()}")
@@ -353,8 +373,16 @@ def show_product(name, run_data):
                 f"**Confidence:** {item['confidence']}  |  "
                 f"**Reviews:** {item['reviews']}"
             )
+            if item.get("risk") == "Unclear":
+                st.caption("Risk is unclear: fewer than 3 customers said clearly whether they would buy again.")
+            elif item.get("decided") is not None:
+                st.caption(f"Risk is based on {item['decided']} guesses where the customer's plan was clear.")
             st.write(f"**What customers believe:** {item['mindset']}")
             st.write(f"**Recommended action:** {item['action']}")
+            if item.get("quotes"):
+                with st.expander("What customers wrote"):
+                    for quote in item["quotes"]:
+                        st.write(f"- \u201c{quote}\u201d")
             st.caption(f"Validation check: {item['comment']}")
 
             if item["needs_human_review"]:
@@ -601,24 +629,38 @@ else:
                 "edit": st.session_state.get(f"edit_{run_name}_{item['topic']}", ""),
             }
 
+    # What to download: the whole analysis or just one product's page
+    whole_label = f"Whole analysis ({len(runs)} products)" if len(runs) > 1 else "Whole analysis"
+    scope_options = [whole_label] + (list(runs.keys()) if len(runs) > 1 else [])
+    scope = st.selectbox("What do you want to download?", scope_options, key="download_scope",
+                         help="Choose the whole analysis, or only the page of one product.")
+    if scope == whole_label:
+        scope_runs, scope_meta, file_tag = runs, meta, "full"
+    else:
+        scope_runs = {scope: runs[scope]}
+        scope_meta = dict(meta)
+        scope_meta["product_counts"] = {k: v for k, v in meta.get("product_counts", {}).items() if k == scope}
+        scope_meta["products_requested"] = 1
+        file_tag = "".join(c if c.isalnum() else "_" for c in scope)[:40].strip("_").lower()
+
     download_pdf, download_json = st.columns(2)
     with download_pdf:
         try:
-            baseline = {run_name: baseline_counts(run_data["reviews"]) for run_name, run_data in runs.items()}
-            pdf_bytes = make_pdf(runs, meta, decisions, baseline)
-            st.download_button("Download the full report (PDF)", data=pdf_bytes, file_name="nuance_report.pdf",
+            baseline = {run_name: baseline_counts(run_data["reviews"]) for run_name, run_data in scope_runs.items()}
+            pdf_bytes = make_pdf(scope_runs, scope_meta, decisions, baseline)
+            st.download_button("Download the report (PDF)", data=pdf_bytes,
+                               file_name=f"nuance_report_{file_tag}.pdf",
                                mime="application/pdf", key="pdf_report", type="primary")
         except Exception as error:
             st.caption(f"The PDF report could not be made: {error}")
-    if live_mode:
-        with download_json:
-            st.download_button(
-                "Save these results for demo mode (JSON)",
-                data=runs_to_json(runs, meta),
-                file_name="dior_demo.json",
-                mime="application/json",
-                key="save_demo",
-            )
+    with download_json:
+        st.download_button(
+            "Save these results for demo mode (JSON)" if live_mode else "Download the results (JSON)",
+            data=runs_to_json(scope_runs, scope_meta),
+            file_name="dior_demo.json" if (live_mode and file_tag == "full") else f"nuance_results_{file_tag}.json",
+            mime="application/json",
+            key="save_demo",
+        )
 
     show_product_choice(meta, runs)
 

@@ -1,0 +1,1613 @@
+{
+ "meta": {
+  "brand": "Dior",
+  "product": "Dior skincare sold at Sephora: Capture Totale Super Potent Eye Serum, Capture Totale Super Potent Rich Cream, Capture Totale firming cream, and Cica Recover Balm",
+  "brand_context": "Brand: Dior, a French luxury house. Skincare lines: Capture Totale (anti-ageing, \"backed by over 40 years of stem cell research\") and Cica (repair for stressed skin). Sold at Sephora at premium prices.\nBrand promises:\n- Capture Totale Super Potent Eye Serum: eyes look younger, less puffiness from the first week, fewer dark circles and fine lines, firmer and brighter eye contour, hydration, a fresh cooling feel, applied with the 360 Cryo-Flex massaging applicator.\n- Capture Totale Super Potent Rich Cream: rich texture, age-defying correction of wrinkles and firmness, \"seals in\" benefits.\n- Capture Totale firming cream: firmer, more visibly revitalised skin.\n- Cica Recover Balm: regenerating multi-use balm for face and body, long-lasting hydration, soothes discomfort, suitable even for the most sensitive skin, no oily or sticky film, no synthetic fragrance.\nAudience: adults who buy premium anti-ageing skincare and expect luxury-level, visible results for the price.",
+  "topics": "results: visible effect on wrinkles, firmness, dark circles, puffiness, glow, or no visible effect\nhydration: moisture, nourishment, dryness\ntexture: how it feels on the skin, rich, heavy, greasy, sticky or light\nscent: smell or fragrance, too strong, perfume-like, fragrance-free expectations\nirritation: breakouts, burning, redness, allergic reactions\npackaging: jar, pump, bottle, applicator, hygiene, leaking\nprice: cost and value for money",
+  "model": "llama3.1:8b (local, Ollama)",
+  "product_counts": {
+   "Capture Totale Super Potent Eye Serum": 106,
+   "Capture Totale Super Potent Rich Cream": 51,
+   "Capture Totale Firming & Wrinkle-Correcting Cream": 49,
+   "Cica Recover & Repair Multi-Use Balm": 33
+  },
+  "products_requested": 5,
+  "products_in_file": 4,
+  "reviews_per_product": 15,
+  "filters": "brand Dior, 3-star reviews"
+ },
+ "runs": {
+  "Capture Totale Super Potent Eye Serum": {
+   "reviews": [
+    "The product itself is good. It\u2019s a lightweight serum that quickly absorbs into the skin. It left my undereyes feeling hydrated which in turn does reduce the appearance of the fine lines that I have under there. It is lightly scented, but nothing that is too overpowering or irritating to the senses. The packaging could use some work.  I feel like I have to use quite a bit of pressure to get some product out.  And the applicator tip seemed too big and wasn\u2019t comfortable to use under my eye.  I opted to squeeze some product on my ring finger and applied it that way. Overall it\u2019s a good product but at the price point it is,  I would choose a different, more Affordable product that has the same results.",
+    "The formulation itself is great. It is scented however it was not too strong and it didn\u2019t irritate my eyes. The eye cream is light and goes on smooth. My under eyes feel nice and hydrated after each use. I did not notice much improvement with puffiness but the hydration did make my fine lines appear more diminished. I used this every night for about a month. The applicator requires too much pressure to get product out. Though I love the concept, I prefer to have a simple tube to squirt product out as needed on my fingers. I honestly don\u2019t plan on purchasing this. There are plenty of other eye creams that will achieve the same effect for less.",
+    "I received this product to try out in a voxbox. The main thing I really like about this product is the applicator. It\u2019s elongated oval shape really lets you get in there and the grooves help to make sure you\u2019re evenly distributing the product. The applicator is made of metal which gives a cool massaging feel when applying serum.The serum itself has a good consistency. It\u2019s not runny but it\u2019s not thick either. The fragrance is very light and not overpowering.While using this product, I did notice some slight smoothing of the skin in terms of fine lines with n my under-eye area but not to the degree that the packaging makes it seem like you will experience. My eyes never appeared larger and my bags did not appear lifted as the product claims. I definitely would not spent the $80 this product retails for based on my results. It definitely feels like they\u2019re charging more for the name than actual performance/serum results. I like this product but I don\u2019t love it.",
+    "I received this item complimentary from Influenster & Dior in exchange for my honest review. I was super excited to try this product out. I really like the packaging and the application process. The serum aborns very easily and feels good on the skin. I have been using every night for about three weeks now and haven\u2019t seen any improvements though. So I was shocked when I saw this was recommended by 90% of reviewers. Is it a nice eye serum? Yes, but if it\u2019s not actually doing anything than I can\u2019t see myself purchasing this in the future. I would have expected some results by now. I\u2019m going to continue using it and hope for the best. To each is own, try at your own risk",
+    "I was fortunate enough to be chosen to sample this eye serum for my honest opinion on it. I absolutely loved the tip on it. The metal felt good spreading the serum under my eyes. I felt that it definitely helped with the puffiness and bags under my eyes that I tend to suffer with daily (no matter hope much sleep I get or water I drink) but I felt it didn\u2019t help at all with the fine lines and wrinkles I have around my eyes. I also wasn\u2019t thrilled about how strong it is scented. It actually made my eyes water when I applied it because the smell was so strong. I\u2019m glad I was given the opportunity to try this but I think I\u2019ll stick with the eye serum I\u2019ve been using that costs only a fraction of the price of this Dior serum",
+    "The product is overall, easy to apply and rather convenient given its design. The applicator is pretty neat but short lived, considering it\u2019s supposed to feel nice and cool since it\u2019s metal but it quickly warms up after finishing one eye. Prior to using this specific product, my eyes were in decent condition as I already had a product I was using prior to receiving this. Not puffy or dark, but just some little lines here and there. I stopped using my daily eye creams and just used the Dior product once in the AM and once in the PM so I can get a true review of the effects. The results were very slight for me personally- again, I don\u2019t have a lot of wrinkles or eye issues, just some light wrinkles. I began seeing results after 2 consecutive weeks of use, the lines became more faint than they were when I first started using this product. By week 3 and 4, there was minimal change and I was okay with that. For $80, it\u2019s a steep price - I saw similar results for a product that runs $54. The trick to these eye creams is that when you do stop using it, the lines return so it\u2019s not a permanent solution and I saw this when I forgot to pack this during vacation to Aruba for a week. When I returned the same results came back. Overall, I would recommend if you want something luxurious. It does what it says, but only as long as you continue to use the product. Maybe I need to finish the entire bottle before permanent results, however I haven\u2019t gotten to that point yet.",
+    "The applicator is so nice it felt cooling and it glides so smooth no tugging on that delicate skin, unfortunately the serum is kinda scented and it made my eyes water and sting a little instantly, I gave it to my mom and she loves it, I haven\u2019t seen much change in her burly isn\u2019t only been a week or so. I got it from influenster",
+    "I received this product for free in exchange for my honest review from Influenster. The eye serum is a medium weight thickness that isn\u2019t runny or too creamy and applies with a smooth oval metal applicator. The applicator feels nice on the skin but is a bit awkward to fit in the tear duct/inner corner area. The serum feels nice and hydrating but pretty sticky if you apply to the eye lids.  I feel like my under eyes look a bit plumper and brighter but nothing dramatically improved and the affects seem pretty temporary. I don\u2019t notice my fine lines being diminished after use or over time and I\u2019ve tested this product nightly for about a month. Maybe it would be more noticeable if I had more defined wrinkles but for the price, there\u2019s better more affordable options out there.",
+    "I was super excited to try this product as I usually love all things Dior. This serum is silky smooth and I love the applicator on the product but I\u2019ll admit that I haven\u2019t seen any noticeable difference. I feel like these products usually take some time to see any improvement or changes and thus far, not much. But a good eye serum is important so I\u2019ll keep using and see what happens!",
+    "The packaging is the biggest flaw. It\u2019s a hard plastic you have to try to squeeze to get the product out. If you squeeze too hard, too much comes out. The metal tip is nice and cooling, but will drag if you don\u2019t have enough product on it. The serum itself was nice. I found it hydrated my under eyes, but didn\u2019t notice any reduction of wrinkles. It didn\u2019t irritate my eyes and played nice with my skin.",
+    "Nice, cooling effect with the applicator. The product didn\u2019t bother my eyes or cause a migraine, which is always good. The results were too slight for me to splurge on this in the future. I\u2019ll continue using the one I have and if I see better results, I\u2019ll edit my review (if that\u2019s possible).",
+    "First off. It feels great under the eyes. When I use the the silver applicator to apply the eye serum under my eyes, it provides a cooling effect. However I don\u2019t like how the product sits on my face after using that applicator so I have to use my finger to rub it into my skin. It has a slight fragrance to it. Did I see any results, well I notice a small difference in my under eye lines so that\u2019s about it. I\u2019ll just pass on this product.",
+    "I have been using this product for a couple of weeks now. I like the applicator as it feels cool and comfortable when applying. The serum feels nice on my skin but honestly I haven\u2019t noticed a substantial difference in puffiness or darkness. Overall it\u2019s a nice product but for the price I probably would not repurchase.",
+    "I received this product for free from Influenster & Dior in exchange for my honest opinion. This eye serum was okay. Nothing spectacular or particularly different from others I\u2019ve tried. I used this product daily for almost a solid month & had no notable changes to the darkness or fine lines. It is a nice formula, it goes on smoothly, absorbs well, & dries to a smooth finish. The application is really nice with the metal tip that does help reduce puffiness.",
+    "I was gifted this product through Influenster. I had high hopes for this but I didn\u2019t feel it performed as it should. Once I read that this was supposed to be used in conjunction with the eye cream, I did lower my expectations. Smooth application, however the metal applicator was completely unnecessary and not useful at all. I did notice a slight reduction in my dark circles and my puffiness but not enough that I would buy the product outright."
+   ],
+   "results": [
+    {
+     "review": "The product itself is good. It\u2019s a lightweight serum that quickly absorbs into the skin. It left my undereyes feeling hydrated which in turn does reduce the appearance of the fine lines that I have under there. It is lightly scented, but nothing that is too overpowering or irritating to the senses. The packaging could use some work.  I feel like I have to use quite a bit of pressure to get some product out.  And the applicator tip seemed too big and wasn\u2019t comfortable to use under my eye.  I opted to squeeze some product on my ring finger and applied it that way. Overall it\u2019s a good product but at the price point it is,  I would choose a different, more Affordable product that has the same results.",
+     "kept": [
+      {
+       "belief": "The product works well for fine lines under the eyes.",
+       "feeling": "positive",
+       "intention": "buy again",
+       "topic": "hydration",
+       "evidence": "It left my undereyes feeling hydrated which in turn does reduce the appearance of the fine lines that I have under there.",
+       "valence": "praise"
+      },
+      {
+       "belief": "The packaging and applicator tip are slightly inconvenient but not a deal-breaker.",
+       "feeling": "mildly frustrated",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "It left my undereyes feeling hydrated which in turn does reduce the appearance of the fine lines that I have under there.",
+       "valence": "praise"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "The formulation itself is great. It is scented however it was not too strong and it didn\u2019t irritate my eyes. The eye cream is light and goes on smooth. My under eyes feel nice and hydrated after each use. I did not notice much improvement with puffiness but the hydration did make my fine lines appear more diminished. I used this every night for about a month. The applicator requires too much pressure to get product out. Though I love the concept, I prefer to have a simple tube to squirt product out as needed on my fingers. I honestly don\u2019t plan on purchasing this. There are plenty of other eye creams that will achieve the same effect for less.",
+     "kept": [
+      {
+       "belief": "The packaging is inconvenient.",
+       "feeling": "frustrated",
+       "intention": "stop buying",
+       "topic": "hydration",
+       "evidence": "My under eyes feel nice and hydrated after each use. I did not notice much improvement with puffiness but the hydration did make my fine lines appear more diminished.",
+       "valence": "problem"
+      },
+      {
+       "belief": "The product provides good hydration.",
+       "feeling": "satisfied",
+       "intention": "buy again",
+       "topic": "hydration",
+       "evidence": "My under eyes feel nice and hydrated after each use. I did not notice much improvement with puffiness but the hydration did make my fine lines appear more diminished.",
+       "valence": "praise"
+      },
+      {
+       "belief": "The product is overcomplicated.",
+       "feeling": "unimpressed",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "the hydration did make my fine lines appear more diminished",
+       "valence": "mixed"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I received this product to try out in a voxbox. The main thing I really like about this product is the applicator. It\u2019s elongated oval shape really lets you get in there and the grooves help to make sure you\u2019re evenly distributing the product. The applicator is made of metal which gives a cool massaging feel when applying serum.The serum itself has a good consistency. It\u2019s not runny but it\u2019s not thick either. The fragrance is very light and not overpowering.While using this product, I did notice some slight smoothing of the skin in terms of fine lines with n my under-eye area but not to the degree that the packaging makes it seem like you will experience. My eyes never appeared larger and my bags did not appear lifted as the product claims. I definitely would not spent the $80 this product retails for based on my results. It definitely feels like they\u2019re charging more for the name than actual performance/serum results. I like this product but I don\u2019t love it.",
+     "kept": [
+      {
+       "belief": "The applicator is convenient to use.",
+       "feeling": "positive",
+       "intention": "buy again",
+       "topic": "other",
+       "evidence": "I did notice",
+       "valence": "mixed"
+      },
+      {
+       "belief": "The product may not be worth the cost.",
+       "feeling": "neutral",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "I did notice",
+       "valence": "mixed"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I received this item complimentary from Influenster & Dior in exchange for my honest review. I was super excited to try this product out. I really like the packaging and the application process. The serum aborns very easily and feels good on the skin. I have been using every night for about three weeks now and haven\u2019t seen any improvements though. So I was shocked when I saw this was recommended by 90% of reviewers. Is it a nice eye serum? Yes, but if it\u2019s not actually doing anything than I can\u2019t see myself purchasing this in the future. I would have expected some results by now. I\u2019m going to continue using it and hope for the best. To each is own, try at your own risk",
+     "kept": [
+      {
+       "belief": "This eye serum is not effective.",
+       "feeling": "disappointed",
+       "intention": "stop buying",
+       "topic": "results",
+       "evidence": "I haven\u2019t seen any improvements though.",
+       "valence": "problem"
+      },
+      {
+       "belief": "The packaging and application process of this eye serum are good, but the results are not as expected.",
+       "feeling": "neutral",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "I haven\u2019t seen any improvements though.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I was fortunate enough to be chosen to sample this eye serum for my honest opinion on it. I absolutely loved the tip on it. The metal felt good spreading the serum under my eyes. I felt that it definitely helped with the puffiness and bags under my eyes that I tend to suffer with daily (no matter hope much sleep I get or water I drink) but I felt it didn\u2019t help at all with the fine lines and wrinkles I have around my eyes. I also wasn\u2019t thrilled about how strong it is scented. It actually made my eyes water when I applied it because the smell was so strong. I\u2019m glad I was given the opportunity to try this but I think I\u2019ll stick with the eye serum I\u2019ve been using that costs only a fraction of the price of this Dior serum",
+     "kept": [
+      {
+       "belief": "The product helps with puffiness and bags under the eyes.",
+       "feeling": "very satisfied",
+       "intention": "buy again",
+       "topic": "results",
+       "evidence": "I felt that it definitely helped with the puffiness and bags under my eyes",
+       "valence": "problem"
+      },
+      {
+       "belief": "The scent of the product is unpleasant.",
+       "feeling": "disappointed",
+       "intention": "stop buying",
+       "topic": "scent",
+       "evidence": "It actually made me a bit nauseous.",
+       "valence": "problem"
+      },
+      {
+       "belief": "The product is too strongly scented.",
+       "feeling": "unhappy",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "I felt that it definitely helped with the puffiness and bags under my eyes that I tend to suffer with daily, but I felt it didn\u2019t help at all with the fine lines and wrinkles I have around my eyes.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "The product is overall, easy to apply and rather convenient given its design. The applicator is pretty neat but short lived, considering it\u2019s supposed to feel nice and cool since it\u2019s metal but it quickly warms up after finishing one eye. Prior to using this specific product, my eyes were in decent condition as I already had a product I was using prior to receiving this. Not puffy or dark, but just some little lines here and there. I stopped using my daily eye creams and just used the Dior product once in the AM and once in the PM so I can get a true review of the effects. The results were very slight for me personally- again, I don\u2019t have a lot of wrinkles or eye issues, just some light wrinkles. I began seeing results after 2 consecutive weeks of use, the lines became more faint than they were when I first started using this product. By week 3 and 4, there was minimal change and I was okay with that. For $80, it\u2019s a steep price - I saw similar results for a product that runs $54. The trick to these eye creams is that when you do stop using it, the lines return so it\u2019s not a permanent solution and I saw this when I forgot to pack this during vacation to Aruba for a week. When I returned the same results came back. Overall, I would recommend if you want something luxurious. It does what it says, but only as long as you continue to use the product. Maybe I need to finish the entire bottle before permanent results, however I haven\u2019t gotten to that point yet.",
+     "kept": [
+      {
+       "belief": "The product is effective against fine lines and wrinkles around the eyes.",
+       "feeling": "neutral",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "Not puffy or dark, but just some little lines here and there",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "The applicator is so nice it felt cooling and it glides so smooth no tugging on that delicate skin, unfortunately the serum is kinda scented and it made my eyes water and sting a little instantly, I gave it to my mom and she loves it, I haven\u2019t seen much change in her burly isn\u2019t only been a week or so. I got it from influenster",
+     "kept": [
+      {
+       "belief": "The scent is irritating",
+       "feeling": "uncomfortable",
+       "intention": "stop buying",
+       "topic": "results",
+       "evidence": "I haven\u2019t seen much change in her burly isn\u2019t only been a week or so.",
+       "valence": "problem"
+      },
+      {
+       "belief": "The product is not worth the effort",
+       "feeling": "neutral",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "I haven\u2019t seen much change in her, burly isn\u2019t only been a week or so.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I received this product for free in exchange for my honest review from Influenster. The eye serum is a medium weight thickness that isn\u2019t runny or too creamy and applies with a smooth oval metal applicator. The applicator feels nice on the skin but is a bit awkward to fit in the tear duct/inner corner area. The serum feels nice and hydrating but pretty sticky if you apply to the eye lids.  I feel like my under eyes look a bit plumper and brighter but nothing dramatically improved and the affects seem pretty temporary. I don\u2019t notice my fine lines being diminished after use or over time and I\u2019ve tested this product nightly for about a month. Maybe it would be more noticeable if I had more defined wrinkles but for the price, there\u2019s better more affordable options out there.",
+     "kept": [
+      {
+       "belief": "the product is not worth the cost",
+       "feeling": "somewhat disappointed",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "nothing dramatically improved",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I was super excited to try this product as I usually love all things Dior. This serum is silky smooth and I love the applicator on the product but I\u2019ll admit that I haven\u2019t seen any noticeable difference. I feel like these products usually take some time to see any improvement or changes and thus far, not much. But a good eye serum is important so I\u2019ll keep using and see what happens!",
+     "kept": [
+      {
+       "belief": "The serum is not effective for this customer.",
+       "feeling": "disappointed",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "I haven't seen any noticeable difference.",
+       "valence": "problem"
+      },
+      {
+       "belief": "The customer is not sure if the product is working yet.",
+       "feeling": "neutral",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "I haven't seen any noticeable difference.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "The packaging is the biggest flaw. It\u2019s a hard plastic you have to try to squeeze to get the product out. If you squeeze too hard, too much comes out. The metal tip is nice and cooling, but will drag if you don\u2019t have enough product on it. The serum itself was nice. I found it hydrated my under eyes, but didn\u2019t notice any reduction of wrinkles. It didn\u2019t irritate my eyes and played nice with my skin.",
+     "kept": [
+      {
+       "belief": "The packaging is flawed and hard to use.",
+       "feeling": "frustrated",
+       "intention": "undecided",
+       "topic": "other",
+       "evidence": "it hydrated my under eyes, but didn\u2019t notice any reduction of wrinkles",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "Nice, cooling effect with the applicator. The product didn\u2019t bother my eyes or cause a migraine, which is always good. The results were too slight for me to splurge on this in the future. I\u2019ll continue using the one I have and if I see better results, I\u2019ll edit my review (if that\u2019s possible).",
+     "kept": [
+      {
+       "belief": "The product is gentle on the eyes.",
+       "feeling": "satisfied",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "The product didn\u2019t bother my eyes or cause a migraine, which is always good. The results were too slight for me to splurge on this in the future.",
+       "valence": "problem"
+      },
+      {
+       "belief": "The product's effectiveness is subjective and depends on individual skin types.",
+       "feeling": "neutral",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "The results were too slight for me to splurge on this in the future.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "First off. It feels great under the eyes. When I use the the silver applicator to apply the eye serum under my eyes, it provides a cooling effect. However I don\u2019t like how the product sits on my face after using that applicator so I have to use my finger to rub it into my skin. It has a slight fragrance to it. Did I see any results, well I notice a small difference in my under eye lines so that\u2019s about it. I\u2019ll just pass on this product.",
+     "kept": [
+      {
+       "belief": "The product doesn't absorb quickly enough",
+       "feeling": "dislike",
+       "intention": "stop buying",
+       "topic": "results",
+       "evidence": "I notice a small difference in my under eye lines so that\u2019s about it",
+       "valence": "problem"
+      },
+      {
+       "belief": "The product's benefits are too subtle",
+       "feeling": "disappointment",
+       "intention": "stop buying",
+       "topic": "results",
+       "evidence": "I notice a small difference in my under eye lines so that\u2019s about it",
+       "valence": "problem"
+      },
+      {
+       "belief": "The product is effective for fine lines",
+       "feeling": "satisfaction",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "I notice a small difference in my under eye lines so that\u2019s about it",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I have been using this product for a couple of weeks now. I like the applicator as it feels cool and comfortable when applying. The serum feels nice on my skin but honestly I haven\u2019t noticed a substantial difference in puffiness or darkness. Overall it\u2019s a nice product but for the price I probably would not repurchase.",
+     "kept": [
+      {
+       "belief": "the product's results are not substantial",
+       "feeling": "disappointed",
+       "intention": "stop buying",
+       "topic": "results",
+       "evidence": "I haven\u2019t noticed a substantial difference in puffiness or darkness",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I received this product for free from Influenster & Dior in exchange for my honest opinion. This eye serum was okay. Nothing spectacular or particularly different from others I\u2019ve tried. I used this product daily for almost a solid month & had no notable changes to the darkness or fine lines. It is a nice formula, it goes on smoothly, absorbs well, & dries to a smooth finish. The application is really nice with the metal tip that does help reduce puffiness.",
+     "kept": [],
+     "needs_human_review": true
+    },
+    {
+     "review": "I was gifted this product through Influenster. I had high hopes for this but I didn\u2019t feel it performed as it should. Once I read that this was supposed to be used in conjunction with the eye cream, I did lower my expectations. Smooth application, however the metal applicator was completely unnecessary and not useful at all. I did notice a slight reduction in my dark circles and my puffiness but not enough that I would buy the product outright.",
+     "kept": [],
+     "needs_human_review": true
+    }
+   ],
+   "priority_table": [
+    {
+     "topic": "results",
+     "reviews": 10,
+     "share_%": 67,
+     "priority": "High",
+     "risk_of_losing_customer": "High",
+     "decided": 6,
+     "complaints": 10,
+     "examples": [
+      "The product may not be worth the cost.",
+      "This eye serum is not effective.",
+      "The packaging and application process of this eye serum are good, but the results are not as expected."
+     ],
+     "quotes": [
+      "I did notice",
+      "I haven\u2019t seen any improvements though.",
+      "I felt that it definitely helped with the puffiness and bags under my eyes"
+     ]
+    },
+    {
+     "topic": "hydration",
+     "reviews": 2,
+     "share_%": 13,
+     "priority": "Medium",
+     "risk_of_losing_customer": "Medium",
+     "decided": 3,
+     "complaints": 1,
+     "examples": [
+      "The packaging is inconvenient.",
+      "The product is overcomplicated."
+     ],
+     "quotes": [
+      "My under eyes feel nice and hydrated after each use. I did not notice much improvement with puffiness but the hydration did make my fine lines appear ",
+      "the hydration did make my fine lines appear more diminished"
+     ]
+    },
+    {
+     "topic": "other",
+     "reviews": 2,
+     "share_%": 13,
+     "priority": "Medium",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 1,
+     "complaints": 2,
+     "examples": [
+      "The applicator is convenient to use.",
+      "The packaging is flawed and hard to use."
+     ],
+     "quotes": [
+      "I did notice",
+      "it hydrated my under eyes, but didn\u2019t notice any reduction of wrinkles"
+     ]
+    },
+    {
+     "topic": "scent",
+     "reviews": 1,
+     "share_%": 7,
+     "priority": "Low",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 1,
+     "complaints": 1,
+     "examples": [
+      "The scent of the product is unpleasant."
+     ],
+     "quotes": [
+      "It actually made me a bit nauseous."
+     ]
+    }
+   ],
+   "briefing": [
+    {
+     "topic": "results",
+     "priority": "High",
+     "risk": "High",
+     "decided": 6,
+     "reviews": 10,
+     "quotes": [
+      "I did notice",
+      "I haven\u2019t seen any improvements though.",
+      "I felt that it definitely helped with the puffiness and bags under my eyes"
+     ],
+     "mindset": "Customers believe the product may not be effective in addressing wrinkles, firmness, dark circles, puffiness, and glow, despite some noticing improvements in puffiness and bags under the eyes.",
+     "action": "Create a more intense and focused version of the serum, with a thicker, more concentrated formula that quickly addresses and reduces the appearance of wrinkles, dark circles, and puffiness.",
+     "confidence": "High",
+     "needs_human_review": false,
+     "comment": "The advice suggests reformulating the product to be more effective."
+    }
+   ]
+  },
+  "Capture Totale Super Potent Rich Cream": {
+   "reviews": [
+    "This cream is okay, but I\u2019m not a fan of the very strong, heavy scent",
+    "Whe I received the product I was having a hard time opening and closing lid. Not sure if the alignment was off or it was me. The cream was very rich and creamy so it moisturized well. I did think the smell was a little strong for a facial cream but did smell nice. I did receive this cream as complimentary and I am not sure I would pay that much for this cream in the future.",
+    "I received this for free from Influenster to review. Like most Dior products, it is heavily scented. The first day I applied it, I found it to be a nice product. It went on smoothly for as thick as it was. I did not experience burning on the dry patches on my face. It did not leave my skin feeling greasy. However, the next time I applied it, the smell was too strong for me that day and I ended up with a migraine. I\u2019ve been afraid to use it since then.",
+    "First of all, I received this product for free to review and test from Influenster. I have used this for almost a month now, twice a day. Once in the morning and once before bed. I have combination skin and to me it is a heavy moisturizer but soaks in very quick and doesn\u2019t leave my skin feeling greasy. It did make my face feel very hydrated, but at the end of this month I really haven\u2019t seen much of a difference in my skin!! It comes with a cute little spoon to apply the creme which I loved. I wasn\u2019t a fan of the lid on the jar. It was a little aggravating to open and close. The smell is nice and light. It isn\u2019t a bad product, but to me the price is too high for not much improvement in my skin.",
+    "This cream is wonderful it just wasn\u2019t for me. My skin is dry in the winter and needs something with more moisture punch but this was too balmy for my skin and didn\u2019t absorb nicely. This cream has a lingering beautiful floral scent so it may not be for you based on that alone. If you have intensely dry skin this is definitely something to grab.",
+    "This Dior cream is very potent and rich as the name claims. It is thick, but feels light on the skin. It should be a win with how well it moisturizes, however, the scent is so strong that it is completely overwhelming. I wouldn\u2019t consider myself sensitive to fragrances and it made me gag. I can\u2019t say if it reduces fine lines and wrinkles, because I couldn\u2019t continue using it with the heavy smell. I wish they made an unscented version as I really love the cream itself!",
+    "I received this product for free to try from Influenster for a complimentary review. I can\u2019t say that I am impressed with this product. I do like the look of the packaging and the cream itself, and I really appreciate that it has a little spoon to avoid contamination of the product. I also like that a little goes a long way, so you don\u2019t have to use that many product. I don\u2019t like that the scent is too strong (it has a perfume scent) and I feel it\u2019s a little on the oily side. For dry skin this may work great, but for normal or combination skin, I would not recommend it as a daytime cream. It may work as a nighttime cream. I think it is on the expensive side, so I wouldn\u2019t recommend for someone with normal or combination skin since it is too heavy and will likely only use it for nighttime, it is more worth the money for someone with dry skin since a little goes a long way and that type of skin will really take benefit off of it.",
+    "I really wanted to like this but unfortunately my skin did not like it. And it is very scented, it\u2019s not a bad scent but it is very strong and lasts a long time.It is very a good moisturizer and it sinks in very nice and doesn\u2019t leave a greasy feeling at all. Unfortunately my skin reacted badly to it from the fragrance. If you don\u2019t have sensitive skin I would recommend it.I received this product free for testing purposes.",
+    "This product was ok. Not a fan of the sensation it gave me on my face. But I like it helped with fine lines. Tip: keep away from your lip line it gave me a undesirable feeling",
+    "I received this product free from Influenster. I am combo mostly oily skin type so I don\u2019t use this product often. I can\u2019t speak to its anti aging benefits because I am in my 20s but it is thick, creamy and rich. I like to layer hydrating serums and mists on my skin before sealing them in with this product at night. Beware if you are sensitive to fragrances. It\u2019s not an in pleasant clean floral smell but if you don\u2019t like scented skincare stay away.",
+    "I received this product free from Influenster to try. I want to start by saying this product is not really right for me as I have combo skin that can get oily. This cream is true to the claims that it is super rich! It is a thick almost balmy consistency in the jar. I don\u2019t particularly care for how it feels on my skin- feels quite heavy. After applying, I noticed my face was pretty greasy. I bet if you have dry skin, it\u2019d be great and give you a dewy look, but if you have combo skin or are oily at all, I would stay away or try the non-super-rich version.",
+    "I received this product from Influenster for my honest opinion. The jar is glass, heavy weighted, looks and feels luxurious. It came with a plastic spatula which was a nice touch but nowhere to store it. I would have liked to have seen a place to store it in the cap. I feel there was definitely a missed opportunity there. If you are going to go through the trouble of providing a spatula please provide a place in the cap to store it for easy access to it as well as to keep it sanitary. I ended up not using the spatula at all due to having to store it somewhere else that I would have to locate it first in order to utilize this feature. The jar itself was extremely hard to open for the first time. It would not open for me at all. I tried for hours to get the jar open only to finally give up on it for the night. The next morning I was finally able to get the jar opened and I was excited to start using the product. Upon opening the jar and removing the plastic protector I was immediately put off by the extreme scent of roses. I am not opposed to fragrance in skincare at all and I actually enjoy the scent of roses but the scent is overwhelming in my opinion. I suffer from migraines and over the top fragrance can trigger reactionary migraines for me. I am happy to report that even though it is extremely fragranced this product did not cause any reactionary migraines. The cream is thick,  luxurious and absorbed into the skin well. Even though the cream is thicker in consistency you do not need much of the product to cover your face, neck and d\u00e9colletage. I did experience some pilling when combined with my other serums with this product so I stopped using it at night and used only in the morning without using my essence, serums or oils. I did not notice any significant improvement in wrinkles or firmness of the skin. I did notice a boost in radiance overall but this was not enough for me to repurchase this product sadly.",
+    "This cream didn\u2019t seem to do much for my skin. It was a nice moisturizer and has a beautiful perfume scent (which is actually pretty strong, if you\u2019re not into that)- but I wouldn\u2019t say it did anything beyond adding some moisture. For the price, I would expect it to do more, but I saw no differences in my skin. If you\u2019re looking for a basic moisturizer, I would find something more affordable. If you want something to help with skin tone and/or wrinkles, look elsewhere.",
+    "The cream is thick and heavily scented but provides little moisturizing benefits. After 2-3 weeks my skin started getting dry and flaky. I also get a burning sensation around my eyes everytime I apply this to my face. Overall, I would not recommend this to anyone looking for a rich moisturizing cream.",
+    "Let me start out by saying I was gifted this by Influenster. On that note I honestly wouldn\u2019t pay this much for a moisturizer. It does work well and it\u2019s nice and thick and I like the scent. It\u2019s a good boujee moisturizer if that\u2019s what you\u2019re looking for. My skin isn\u2019t fussy and pretty normal so I didn\u2019t see much change. I\u2019d recommend if you\u2019re in the market for a boujee cream but other than that, I wouldn\u2019t. Thanks Influenster!"
+   ],
+   "results": [
+    {
+     "review": "This cream is okay, but I\u2019m not a fan of the very strong, heavy scent",
+     "kept": [
+      {
+       "belief": "The scent of Capture Totale Super Potent Rich Cream is too strong",
+       "feeling": "displeased",
+       "intention": "stop buying",
+       "topic": "scent",
+       "evidence": "This cream is okay, but I\u2019m not a fan of the very strong, heavy scent",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "Whe I received the product I was having a hard time opening and closing lid. Not sure if the alignment was off or it was me. The cream was very rich and creamy so it moisturized well. I did think the smell was a little strong for a facial cream but did smell nice. I did receive this cream as complimentary and I am not sure I would pay that much for this cream in the future.",
+     "kept": [
+      {
+       "belief": "The cream moisturizes well",
+       "feeling": "pleased",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "The cream was very rich and creamy so it moisturized well.",
+       "valence": "praise"
+      },
+      {
+       "belief": "The scent is too strong",
+       "feeling": "overwhelmed",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "The cream was very rich and creamy so it moisturized well.",
+       "valence": "praise"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I received this for free from Influenster to review. Like most Dior products, it is heavily scented. The first day I applied it, I found it to be a nice product. It went on smoothly for as thick as it was. I did not experience burning on the dry patches on my face. It did not leave my skin feeling greasy. However, the next time I applied it, the smell was too strong for me that day and I ended up with a migraine. I\u2019ve been afraid to use it since then.",
+     "kept": [
+      {
+       "belief": "Dior products are too strongly scented for some people",
+       "feeling": "skeptical",
+       "intention": "undecided",
+       "topic": "texture",
+       "evidence": "It went on smoothly for as thick as it was.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "First of all, I received this product for free to review and test from Influenster. I have used this for almost a month now, twice a day. Once in the morning and once before bed. I have combination skin and to me it is a heavy moisturizer but soaks in very quick and doesn\u2019t leave my skin feeling greasy. It did make my face feel very hydrated, but at the end of this month I really haven\u2019t seen much of a difference in my skin!! It comes with a cute little spoon to apply the creme which I loved. I wasn\u2019t a fan of the lid on the jar. It was a little aggravating to open and close. The smell is nice and light. It isn\u2019t a bad product, but to me the price is too high for not much improvement in my skin.",
+     "kept": [],
+     "needs_human_review": true
+    },
+    {
+     "review": "This cream is wonderful it just wasn\u2019t for me. My skin is dry in the winter and needs something with more moisture punch but this was too balmy for my skin and didn\u2019t absorb nicely. This cream has a lingering beautiful floral scent so it may not be for you based on that alone. If you have intensely dry skin this is definitely something to grab.",
+     "kept": [
+      {
+       "belief": "Capture Totale Super Potent Rich Cream has too much moisture for this customer's skin.",
+       "feeling": "not pleased",
+       "intention": "stop buying",
+       "topic": "scent",
+       "evidence": "This cream has a lingering beautiful floral scent so it may not be for you based on that alone. If you have intensely dry skin this is definitely something to grab.",
+       "valence": "problem"
+      },
+      {
+       "belief": "Capture Totale Super Potent Rich Cream has a scent that is too overpowering for some people.",
+       "feeling": "disappointed",
+       "intention": "undecided",
+       "topic": "other",
+       "evidence": "This cream is wonderful it just wasn\u2019t for me.",
+       "valence": "mixed"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "This Dior cream is very potent and rich as the name claims. It is thick, but feels light on the skin. It should be a win with how well it moisturizes, however, the scent is so strong that it is completely overwhelming. I wouldn\u2019t consider myself sensitive to fragrances and it made me gag. I can\u2019t say if it reduces fine lines and wrinkles, because I couldn\u2019t continue using it with the heavy smell. I wish they made an unscented version as I really love the cream itself!",
+     "kept": [
+      {
+       "belief": "The cream is effective at moisturizing.",
+       "feeling": "impressed",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "It should be a win with how well it moisturizes",
+       "valence": "praise"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I received this product for free to try from Influenster for a complimentary review. I can\u2019t say that I am impressed with this product. I do like the look of the packaging and the cream itself, and I really appreciate that it has a little spoon to avoid contamination of the product. I also like that a little goes a long way, so you don\u2019t have to use that many product. I don\u2019t like that the scent is too strong (it has a perfume scent) and I feel it\u2019s a little on the oily side. For dry skin this may work great, but for normal or combination skin, I would not recommend it as a daytime cream. It may work as a nighttime cream. I think it is on the expensive side, so I wouldn\u2019t recommend for someone with normal or combination skin since it is too heavy and will likely only use it for nighttime, it is more worth the money for someone with dry skin since a little goes a long way and that type of skin will really take benefit off of it.",
+     "kept": [
+      {
+       "belief": "The scent is too strong",
+       "feeling": "negative",
+       "intention": "undecided",
+       "topic": "scent",
+       "evidence": "I don\u2019t like that the scent is too strong",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I really wanted to like this but unfortunately my skin did not like it. And it is very scented, it\u2019s not a bad scent but it is very strong and lasts a long time.It is very a good moisturizer and it sinks in very nice and doesn\u2019t leave a greasy feeling at all. Unfortunately my skin reacted badly to it from the fragrance. If you don\u2019t have sensitive skin I would recommend it.I received this product free for testing purposes.",
+     "kept": [
+      {
+       "belief": "The product is too scented.",
+       "feeling": "disappointed",
+       "intention": "stop buying",
+       "topic": "texture",
+       "evidence": "It is very a good moisturizer and it sinks in very nice and doesn\u2019t leave a greasy feeling at all.",
+       "valence": "praise"
+      },
+      {
+       "belief": "The product is effective, but not suitable for sensitive skin.",
+       "feeling": "neutral",
+       "intention": "undecided",
+       "topic": "irritation",
+       "evidence": "Unfortunately my skin did not like it.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "This product was ok. Not a fan of the sensation it gave me on my face. But I like it helped with fine lines. Tip: keep away from your lip line it gave me a undesirable feeling",
+     "kept": [
+      {
+       "belief": "The product's sensation is unpleasant.",
+       "feeling": "unpleasant",
+       "intention": "stop buying",
+       "topic": "results",
+       "evidence": "But I like it helped with fine lines.",
+       "valence": "problem"
+      },
+      {
+       "belief": "The product is effective in reducing fine lines.",
+       "feeling": "pleased",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "it helped with fine lines",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I received this product free from Influenster. I am combo mostly oily skin type so I don\u2019t use this product often. I can\u2019t speak to its anti aging benefits because I am in my 20s but it is thick, creamy and rich. I like to layer hydrating serums and mists on my skin before sealing them in with this product at night. Beware if you are sensitive to fragrances. It\u2019s not an in pleasant clean floral smell but if you don\u2019t like scented skincare stay away.",
+     "kept": [],
+     "needs_human_review": true
+    },
+    {
+     "review": "I received this product free from Influenster to try. I want to start by saying this product is not really right for me as I have combo skin that can get oily. This cream is true to the claims that it is super rich! It is a thick almost balmy consistency in the jar. I don\u2019t particularly care for how it feels on my skin- feels quite heavy. After applying, I noticed my face was pretty greasy. I bet if you have dry skin, it\u2019d be great and give you a dewy look, but if you have combo skin or are oily at all, I would stay away or try the non-super-rich version.",
+     "kept": [
+      {
+       "belief": "Capture Totale Super Potent Rich Cream is not suitable for combo skin.",
+       "feeling": "unhappy",
+       "intention": "stop buying",
+       "topic": "texture",
+       "evidence": "I bet if you have dry skin, it\u2019d be great and give you a dewy look, but if you have combo skin or are oily",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I received this product from Influenster for my honest opinion. The jar is glass, heavy weighted, looks and feels luxurious. It came with a plastic spatula which was a nice touch but nowhere to store it. I would have liked to have seen a place to store it in the cap. I feel there was definitely a missed opportunity there. If you are going to go through the trouble of providing a spatula please provide a place in the cap to store it for easy access to it as well as to keep it sanitary. I ended up not using the spatula at all due to having to store it somewhere else that I would have to locate it first in order to utilize this feature. The jar itself was extremely hard to open for the first time. It would not open for me at all. I tried for hours to get the jar open only to finally give up on it for the night. The next morning I was finally able to get the jar opened and I was excited to start using the product. Upon opening the jar and removing the plastic protector I was immediately put off by the extreme scent of roses. I am not opposed to fragrance in skincare at all and I actually enjoy the scent of roses but the scent is overwhelming in my opinion. I suffer from migraines and over the top fragrance can trigger reactionary migraines for me. I am happy to report that even though it is extremely fragranced this product did not cause any reactionary migraines. The cream is thick,  luxurious and absorbed into the skin well. Even though the cream is thicker in consistency you do not need much of the product to cover your face, neck and d\u00e9colletage. I did experience some pilling when combined with my other serums with this product so I stopped using it at night and used only in the morning without using my essence, serums or oils. I did not notice any significant improvement in wrinkles or firmness of the skin. I did notice a boost in radiance overall but this was not enough for me to repurchase this product sadly.",
+     "kept": [],
+     "needs_human_review": true
+    },
+    {
+     "review": "This cream didn\u2019t seem to do much for my skin. It was a nice moisturizer and has a beautiful perfume scent (which is actually pretty strong, if you\u2019re not into that)- but I wouldn\u2019t say it did anything beyond adding some moisture. For the price, I would expect it to do more, but I saw no differences in my skin. If you\u2019re looking for a basic moisturizer, I would find something more affordable. If you want something to help with skin tone and/or wrinkles, look elsewhere.",
+     "kept": [
+      {
+       "belief": "This cream did nothing beyond moisturizing my skin.",
+       "feeling": "disappointed",
+       "intention": "stop buying",
+       "topic": "results",
+       "evidence": "This cream didn\u2019t seem to do much for my skin.",
+       "valence": "problem"
+      },
+      {
+       "belief": "I was expecting a stronger effect, but the cream has its own value as a basic moisturizer.",
+       "feeling": "neutral",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "I wouldn\u2019t say it did anything beyond adding some moisture.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "The cream is thick and heavily scented but provides little moisturizing benefits. After 2-3 weeks my skin started getting dry and flaky. I also get a burning sensation around my eyes everytime I apply this to my face. Overall, I would not recommend this to anyone looking for a rich moisturizing cream.",
+     "kept": [
+      {
+       "belief": "The cream's long-term effects are negative.",
+       "feeling": "concerned",
+       "intention": "stop buying",
+       "topic": "hydration",
+       "evidence": "After 2-3 weeks my skin started getting dry and flaky.",
+       "valence": "problem"
+      },
+      {
+       "belief": "The cream's price is not justified by its performance.",
+       "feeling": "unsatisfied",
+       "intention": "stop buying",
+       "topic": "hydration",
+       "evidence": "After 2-3 weeks my skin started getting dry and flaky",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "Let me start out by saying I was gifted this by Influenster. On that note I honestly wouldn\u2019t pay this much for a moisturizer. It does work well and it\u2019s nice and thick and I like the scent. It\u2019s a good boujee moisturizer if that\u2019s what you\u2019re looking for. My skin isn\u2019t fussy and pretty normal so I didn\u2019t see much change. I\u2019d recommend if you\u2019re in the market for a boujee cream but other than that, I wouldn\u2019t. Thanks Influenster!",
+     "kept": [
+      {
+       "belief": "The product's scent is pleasant",
+       "feeling": "happy",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "it does work well",
+       "valence": "praise"
+      }
+     ],
+     "needs_human_review": false
+    }
+   ],
+   "priority_table": [
+    {
+     "topic": "hydration",
+     "reviews": 4,
+     "share_%": 27,
+     "priority": "High",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 2,
+     "complaints": 2,
+     "examples": [
+      "I was expecting a stronger effect, but the cream has its own value as a basic moisturizer.",
+      "The cream's long-term effects are negative.",
+      "The cream's price is not justified by its performance."
+     ],
+     "quotes": [
+      "I wouldn\u2019t say it did anything beyond adding some moisture.",
+      "After 2-3 weeks my skin started getting dry and flaky.",
+      "After 2-3 weeks my skin started getting dry and flaky"
+     ]
+    },
+    {
+     "topic": "scent",
+     "reviews": 3,
+     "share_%": 20,
+     "priority": "Medium",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 2,
+     "complaints": 3,
+     "examples": [
+      "The scent of Capture Totale Super Potent Rich Cream is too strong",
+      "Capture Totale Super Potent Rich Cream has too much moisture for this customer's skin.",
+      "The scent is too strong"
+     ],
+     "quotes": [
+      "This cream is okay, but I\u2019m not a fan of the very strong, heavy scent",
+      "This cream has a lingering beautiful floral scent so it may not be for you based on that alone. If you have intensely dry skin this is definitely some",
+      "I don\u2019t like that the scent is too strong"
+     ]
+    },
+    {
+     "topic": "results",
+     "reviews": 3,
+     "share_%": 20,
+     "priority": "Medium",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 2,
+     "complaints": 2,
+     "examples": [
+      "The product's sensation is unpleasant.",
+      "The product is effective in reducing fine lines.",
+      "This cream did nothing beyond moisturizing my skin."
+     ],
+     "quotes": [
+      "But I like it helped with fine lines.",
+      "it helped with fine lines",
+      "This cream didn\u2019t seem to do much for my skin."
+     ]
+    },
+    {
+     "topic": "texture",
+     "reviews": 3,
+     "share_%": 20,
+     "priority": "Medium",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 2,
+     "complaints": 2,
+     "examples": [
+      "Dior products are too strongly scented for some people",
+      "Capture Totale Super Potent Rich Cream is not suitable for combo skin."
+     ],
+     "quotes": [
+      "It went on smoothly for as thick as it was.",
+      "I bet if you have dry skin, it\u2019d be great and give you a dewy look, but if you have combo skin or are oily"
+     ]
+    },
+    {
+     "topic": "other",
+     "reviews": 1,
+     "share_%": 7,
+     "priority": "Low",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 0,
+     "complaints": 1,
+     "examples": [
+      "Capture Totale Super Potent Rich Cream has a scent that is too overpowering for some people."
+     ],
+     "quotes": [
+      "This cream is wonderful it just wasn\u2019t for me."
+     ]
+    },
+    {
+     "topic": "irritation",
+     "reviews": 1,
+     "share_%": 7,
+     "priority": "Low",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 0,
+     "complaints": 1,
+     "examples": [
+      "The product is effective, but not suitable for sensitive skin."
+     ],
+     "quotes": [
+      "Unfortunately my skin did not like it."
+     ]
+    }
+   ],
+   "briefing": [
+    {
+     "topic": "hydration",
+     "priority": "High",
+     "risk": "Unclear",
+     "decided": 2,
+     "reviews": 4,
+     "quotes": [
+      "I wouldn\u2019t say it did anything beyond adding some moisture.",
+      "After 2-3 weeks my skin started getting dry and flaky.",
+      "After 2-3 weeks my skin started getting dry and flaky"
+     ],
+     "mindset": "Customers believed the cream would provide strong hydration and nourishment, but it fell short of expectations, with some experiencing dryness and flakiness after a few weeks.",
+     "action": "Develop a cream with a gentler formula that maintains hydration levels for a longer period without causing dryness or flakiness.",
+     "confidence": "High",
+     "needs_human_review": false,
+     "comment": "The advice targets the issue of dryness and flakiness."
+    },
+    {
+     "topic": "scent",
+     "priority": "Medium",
+     "risk": "Unclear",
+     "decided": 2,
+     "reviews": 3,
+     "quotes": [
+      "This cream is okay, but I\u2019m not a fan of the very strong, heavy scent",
+      "This cream has a lingering beautiful floral scent so it may not be for you based on that alone. If you have intensely dry skin this is definitely some",
+      "I don\u2019t like that the scent is too strong"
+     ],
+     "mindset": "Some customers expect a fragrance-free or very subtle scent from a premium anti-ageing product, but the Capture Totale Super Potent Rich Cream has a strong, lingering floral scent that puts them off.",
+     "action": "Modify the scent to a subtle, non-perfume-like fragrance or offer a fragrance-free version of the product.",
+     "confidence": "Medium",
+     "needs_human_review": false,
+     "comment": "The advice targets the scent and suggests a concrete modification."
+    },
+    {
+     "topic": "results",
+     "priority": "Medium",
+     "risk": "Unclear",
+     "decided": 2,
+     "reviews": 3,
+     "quotes": [
+      "But I like it helped with fine lines.",
+      "it helped with fine lines",
+      "This cream didn\u2019t seem to do much for my skin."
+     ],
+     "mindset": "Some customers expect the product to deliver significant visible anti-ageing results, but their experience falls short of their expectations.",
+     "action": "Revamp the formula to deliver a more substantial, noticeable correction of wrinkles and firmness, while maintaining a rich texture.",
+     "confidence": "Medium",
+     "needs_human_review": false,
+     "comment": "The advice suggests revamping the formula to deliver more substantial results."
+    }
+   ]
+  },
+  "Capture Totale Firming & Wrinkle-Correcting Cream": {
+   "reviews": [
+    "I got a sample of this and a sample of the NuFace creams. They are quite different from each other, so not exactly comparing apples to apples. The Dior cream was much more intense. I felt sharp tingling to light burning sensations for a few minutes - but I will say the blemishes cleared up overnight with this product! A sample was not enough to confirm the firming/anti-aging claims. With the overnight results on blemishes, I was impressed. I ended up buying the full size NuFace instead for these reasons: much lower price mark (obviously) and far more gentle on the skin (no burning) with same blemish-clearing results. I\u2019d like to try a couple full size bottles of the Dior since I\u2019m really looking for firming (something NuFace didn\u2019t live up to) but I don\u2019t think the price mark is worth the disappointment expressed by others.",
+    "Main impression, it\u2019s very fragrant. I could still smell it after an hour from application. The texture feels thin but as applied to the skin, it will feel a bit thick and sticky for five minutes until it gets absorbed. Observed nothing for a change but this is just my initial thought as I\u2019ve only used it a few times from a sample.",
+    "I love Dior and their products have been awesome for me in the past, but they keep changing the lineup so right when I get a routine figured out they discontinue what I\u2019m using.  I bought this cream because my skin is always too dry over the winter.  This is definitely a very deeply moisturizing night cream type of product.  I feel like it moisturized my skin well but I also saw an increase in breakouts.  I bought it twice because it seemed to get used up fast, there isn\u2019t a ton of product especially for the price.",
+    "Did not like\u2026it pilled and was too thin of a consistency. I forgot to keep my receipt and original box the covered the container. Now I cannot return it. So sorry I tried this.  I am 62 years old",
+    "3.5/4 stars out of 5 for this firming and wrinkle correcting cream. Pros: really lovely, thick cream that does feel luxurious. For full background, my face routine has typically been Drunk Elephant & Tatcha. My usual suspects are DE Lala retro, retinol, protini polypeptide cream, and the Tatcha cleansing oil and violet C serum. I added this Dior to the mix in place of lala and protini for a couple of weeks. At first, my face reacted with a little breakout, but after a few days, it settled back down. I did feel like my skin looked and felt more moisturized and glowy. The packaging is also beautiful- definitely well-made. The jar is a heavy glass and it comes with an applicator as well so you can keep it uncontaminated. Things I personally didn\u2019t love: it\u2019s quite strongly-scented, and the scent is lovely, but it doesn\u2019t smell totally natural - a bit more concentrated than that. The smell does dissipate pretty quickly, but I\u2019m a bit sensitive to smells (can sometimes trigger headaches) so I noticed I\u2019d automatically avoid this if my head was feeling prone to a headache that night. A little heavy: I put this on one morning and let it sink in before going out and still saw that my face was really shiny all day. I only put it on at night after that. If you do it at night and shower in the morning, it\u2019s not really a problem. I don\u2019t know that I would buy it again because I\u2019m sensitive to this smell, and I like my products to feel more natural, but if they got a fragrance free version, I would definitely give it another shot!",
+    "The Dior Super Potent Rich Creme is aptly named for it\u2019s rich and thick texture. It is still able to blend into the skin well and doesn\u2019t sit on the surface like a film how some thick moisturizers do. It does have a strong scent of baby powder which I don\u2019t love but it is tolerable. I would prefer less scent or a better scent. It does leave my combination skin moisturized without feeling too oily. I will use this up but I don\u2019t think I would repurchase as I have other moisturizers that I would prefer over this one.",
+    "More like 3.75 stars if I could really pick. The cream is very luxurious for sure. It might feel a little thick but it goes on like silk and dries beautifully (very fast compared to others I\u2019ve tried). My skin felt nourished but not greasy at all, supple and I\u2019m more on the oily side. The scent is very light, like a watered down citrus and cucumber scent, not offensive at all and disappears pretty fast. I have trouble with hormonal acne and on top of that, now \u201cmask-ne\u201d issues from wearing masks 12 + hrs. It didn\u2019t do very much for my acne/problem areas and I wasn\u2019t expecting it to. But the other half of my face did appear more radiant and healthy. I did see some slight slight improvement with some of my under eye wrinkles but mostly my under eyes appeared less crepey when wearing makeup so I was pleased with that at least. I didn\u2019t use the product sparingly and I\u2019ve been using for a little more than a month now and I still have about 1/4 left. So I think price wise it\u2019s reasonable if used in moderation. I wish I could\u2019ve tried this when I was having a better skin month to really see its full potential. Since I received this as a free sample from Influenster in exchange for my review I had to start using it soon after I got it. Perhaps I will give it another try in the near future and get a better feel for it. Definitely worth a re-try.",
+    "I received this from Influenster to give my honest review. The jar is glass, heavy weighted, looks and feels luxurious. It came with a plastic spatula which was a nice touch but nowhere to store it. I would have liked to have seen a place to store it in the cap. I feel there was definitely a missed opportunity there. If you are going to go through the trouble of providing a spatula please provide a place in the cap to store it for easy access to it as well as to keep it sanitary. I ended up not using the spatula at all due to having to store it somewhere else that I would have to locate it first in order to utilize this feature. The jar itself was extremely hard to open for the first time. It would not open for me at all. I tried for hours to get the jar open only to finally give up on it for the night. The next morning I was finally able to get the jar opened and I was excited to start using the product. Upon opening the jar and removing the plastic protector I was immediately put off by the extreme scent of roses. I am not opposed to fragrance in skincare at all and I actually enjoy the scent of roses but the scent is overwhelming in my opinion. I suffer from migraines and over the top fragrance can trigger reactionary migraines for me. I am happy to report that even though it is extremely fragranced this product did not cause any reactionary migraines. The cream is thick,  luxurious and absorbed into the skin well. Even though the cream is thicker in consistency you do not need much of the product to cover your face, neck and d\u00e9colletage. I did experience some pilling when combined with my other serums with this product so I stopped using it at night and used only in the morning without using my essence, serums or oils. I did not notice any significant reduction in wrinkles or firmness or the skin. I did notice a boost in radiance of my skin but honestly this is not enough to repurchase sadly.",
+    "I am sad to say, this is pretty much your standard moisturizer. I have other Door skin products I love but unfortunately this didn\u2019t do what it claimed. I used it religiously and my skin was hydrated but it didn\u2019t do much in the way of radiance, help with fine lines etc.",
+    "The fragrance was a bit strong , the cream is very light weight though. I have only been using it at night , but my skin does feel softer , not sure I notice less fine lines or not though. A little goes a long way so it will last a while.",
+    "So if you late not a fan of fragrance then I would slip out on this product. It is heavily fragranced and I am not a big fan of the scent. Overall I did notice a difference in the appearance of my face while using this. It had a more smoother appearance and seem a lot more moisturized. I have combo skin and tend to run on the drier side during winter, I only used this product at night. Even though it absorbed into the skin well and didn\u2019t leave a greasy feel. I just felt more comfortable using at night then during the day under makeup. I would totally recommend this product if it is something that is in your price point and you don\u2019t mind fragrance.",
+    "Good but not amazing for the price. It has a very strong scent so if you\u2019re not into that you will not like it. It is thick but goes on nicely and sinks in so you don\u2019t feel like you have a heavy layer on your face. I woke up and seemed like I had brighter skin but a few days later it seemed it made me break out a little.",
+    "I received this complimentary to try from Influenster. Honestly, I really wanted to love this and expected so much strictly because of the brand name. Giving this a fair test, I only used it and my makeup remover/ cleanser nightly. I applied the cream 2xs a day as directed for the past month. For reference, I have used very high end skin creams in the past. The brands are considered luxury by most. As far as the cream\u2019s performance it did not \u201c wow me\u201c. Sure it felt amazing , and it made my skin feel nice and supple, however at this price point it should. It did make my face seem hydrated. As far as fine lines go, I do have a few lines around my eye area. I do not have many. It did help possible a little bit. This cream did not give me the \u201c foutain of youth\u201c. The one big thing that I disliked was the packaging. I hated the \u201c spatula\u201c that Dior used . For this price, putting a plastic spoon took away from its elegance overall. I hated that I had to place the spoon under the lid nightly. It was not a good design. Comparing this to the Tatcha brand which is cheaper the design is much better. Tatcha has a holder at the top and is with a metal spoon where Dior\u2019s  is just a plastic spatula. Dior is supposed to be a brand that is Luxe and this cream just did not scream all 5 stars. For the smell, it was not overpowering like I exoected. It was lightweight. A little bit of cream does go a long way. I did like using this, but I would not purchase it even though I am able. It does not set itself apart from the rest. A brand name cream at this price point should be amazing all around. This is not. I cannot recommend this based on price.",
+    "I received this product for free for my honest review from Influenster.  I\u2019m not one to blow smoke, so I won\u2019t.  I have not seen a reduction in the fine lines around my eyes. But I have seen an INCREASE in OIL production.  I have oily skin. And this product seems to make my skin think its dry. I\u2019m not a fan and $100+ is too much for something to not work. I will pay for a product if it works, but it doesn\u2019t.",
+    "This face cream has a lovely texture, absorbed well into my very dry skin and did not pill nor otherwise seen to interact poorly with my usual serums, Rx tretinoin/niacinimide, nor 3 different Herbivore facial oils. At first it was a real treat to use - very decedent! I mean, it\u2019s Dior! My HG foundation is Forever Skin Glow. I adore J\u2019adore! Sadly, this was one fragrance that I soon became sensitive to - my skin was fine but my previously nonexistent allergies became a problem."
+   ],
+   "results": [
+    {
+     "review": "I got a sample of this and a sample of the NuFace creams. They are quite different from each other, so not exactly comparing apples to apples. The Dior cream was much more intense. I felt sharp tingling to light burning sensations for a few minutes - but I will say the blemishes cleared up overnight with this product! A sample was not enough to confirm the firming/anti-aging claims. With the overnight results on blemishes, I was impressed. I ended up buying the full size NuFace instead for these reasons: much lower price mark (obviously) and far more gentle on the skin (no burning) with same blemish-clearing results. I\u2019d like to try a couple full size bottles of the Dior since I\u2019m really looking for firming (something NuFace didn\u2019t live up to) but I don\u2019t think the price mark is worth the disappointment expressed by others.",
+     "kept": [],
+     "needs_human_review": true
+    },
+    {
+     "review": "Main impression, it\u2019s very fragrant. I could still smell it after an hour from application. The texture feels thin but as applied to the skin, it will feel a bit thick and sticky for five minutes until it gets absorbed. Observed nothing for a change but this is just my initial thought as I\u2019ve only used it a few times from a sample.",
+     "kept": [],
+     "needs_human_review": true
+    },
+    {
+     "review": "I love Dior and their products have been awesome for me in the past, but they keep changing the lineup so right when I get a routine figured out they discontinue what I\u2019m using.  I bought this cream because my skin is always too dry over the winter.  This is definitely a very deeply moisturizing night cream type of product.  I feel like it moisturized my skin well but I also saw an increase in breakouts.  I bought it twice because it seemed to get used up fast, there isn\u2019t a ton of product especially for the price.",
+     "kept": [
+      {
+       "belief": "Dior's product line is too inconsistent",
+       "feeling": "disappointed",
+       "intention": "stop buying",
+       "topic": "hydration",
+       "evidence": "I feel like it moisturized my skin well",
+       "valence": "problem"
+      },
+      {
+       "belief": "This cream is too moisturizing for my skin",
+       "feeling": "overwhelmed",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "I feel like it moisturized my skin well",
+       "valence": "problem"
+      },
+      {
+       "belief": "This cream is too expensive for the amount of product",
+       "feeling": "frustrated",
+       "intention": "stop buying",
+       "topic": "hydration",
+       "evidence": "I feel like it moisturized my skin well",
+       "valence": "problem"
+      },
+      {
+       "belief": "This cream is effective at moisturizing dry skin",
+       "feeling": "grateful",
+       "intention": "buy again",
+       "topic": "hydration",
+       "evidence": "I feel like it moisturized my skin well",
+       "valence": "problem"
+      },
+      {
+       "belief": "I'm not sure if this cream is worth the price",
+       "feeling": "unsure",
+       "intention": "undecided",
+       "topic": "irritation",
+       "evidence": "I feel like it moisturized my skin well but I also saw an increase in breakouts.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "Did not like\u2026it pilled and was too thin of a consistency. I forgot to keep my receipt and original box the covered the container. Now I cannot return it. So sorry I tried this.  I am 62 years old",
+     "kept": [
+      {
+       "belief": "The product has a pilling problem",
+       "feeling": "frustrated",
+       "intention": "stop buying",
+       "topic": "texture",
+       "evidence": "the product has a pilling problem",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "3.5/4 stars out of 5 for this firming and wrinkle correcting cream. Pros: really lovely, thick cream that does feel luxurious. For full background, my face routine has typically been Drunk Elephant & Tatcha. My usual suspects are DE Lala retro, retinol, protini polypeptide cream, and the Tatcha cleansing oil and violet C serum. I added this Dior to the mix in place of lala and protini for a couple of weeks. At first, my face reacted with a little breakout, but after a few days, it settled back down. I did feel like my skin looked and felt more moisturized and glowy. The packaging is also beautiful- definitely well-made. The jar is a heavy glass and it comes with an applicator as well so you can keep it uncontaminated. Things I personally didn\u2019t love: it\u2019s quite strongly-scented, and the scent is lovely, but it doesn\u2019t smell totally natural - a bit more concentrated than that. The smell does dissipate pretty quickly, but I\u2019m a bit sensitive to smells (can sometimes trigger headaches) so I noticed I\u2019d automatically avoid this if my head was feeling prone to a headache that night. A little heavy: I put this on one morning and let it sink in before going out and still saw that my face was really shiny all day. I only put it on at night after that. If you do it at night and shower in the morning, it\u2019s not really a problem. I don\u2019t know that I would buy it again because I\u2019m sensitive to this smell, and I like my products to feel more natural, but if they got a fragrance free version, I would definitely give it another shot!",
+     "kept": [
+      {
+       "belief": "Dior Capture Totale is effective in reducing wrinkles.",
+       "feeling": "disappointed",
+       "intention": "undecided",
+       "topic": "texture",
+       "evidence": "really lovely, thick cream that does feel luxurious",
+       "valence": "praise"
+      },
+      {
+       "belief": "Dior Capture Totale is a good addition to a skincare routine.",
+       "feeling": "mixed",
+       "intention": "buy again",
+       "topic": "irritation",
+       "evidence": "At first, my face reacted with a little breakout, but after a few days, it settled back down.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "The Dior Super Potent Rich Creme is aptly named for it\u2019s rich and thick texture. It is still able to blend into the skin well and doesn\u2019t sit on the surface like a film how some thick moisturizers do. It does have a strong scent of baby powder which I don\u2019t love but it is tolerable. I would prefer less scent or a better scent. It does leave my combination skin moisturized without feeling too oily. I will use this up but I don\u2019t think I would repurchase as I have other moisturizers that I would prefer over this one.",
+     "kept": [],
+     "needs_human_review": true
+    },
+    {
+     "review": "More like 3.75 stars if I could really pick. The cream is very luxurious for sure. It might feel a little thick but it goes on like silk and dries beautifully (very fast compared to others I\u2019ve tried). My skin felt nourished but not greasy at all, supple and I\u2019m more on the oily side. The scent is very light, like a watered down citrus and cucumber scent, not offensive at all and disappears pretty fast. I have trouble with hormonal acne and on top of that, now \u201cmask-ne\u201d issues from wearing masks 12 + hrs. It didn\u2019t do very much for my acne/problem areas and I wasn\u2019t expecting it to. But the other half of my face did appear more radiant and healthy. I did see some slight slight improvement with some of my under eye wrinkles but mostly my under eyes appeared less crepey when wearing makeup so I was pleased with that at least. I didn\u2019t use the product sparingly and I\u2019ve been using for a little more than a month now and I still have about 1/4 left. So I think price wise it\u2019s reasonable if used in moderation. I wish I could\u2019ve tried this when I was having a better skin month to really see its full potential. Since I received this as a free sample from Influenster in exchange for my review I had to start using it soon after I got it. Perhaps I will give it another try in the near future and get a better feel for it. Definitely worth a re-try.",
+     "kept": [],
+     "needs_human_review": true
+    },
+    {
+     "review": "I received this from Influenster to give my honest review. The jar is glass, heavy weighted, looks and feels luxurious. It came with a plastic spatula which was a nice touch but nowhere to store it. I would have liked to have seen a place to store it in the cap. I feel there was definitely a missed opportunity there. If you are going to go through the trouble of providing a spatula please provide a place in the cap to store it for easy access to it as well as to keep it sanitary. I ended up not using the spatula at all due to having to store it somewhere else that I would have to locate it first in order to utilize this feature. The jar itself was extremely hard to open for the first time. It would not open for me at all. I tried for hours to get the jar open only to finally give up on it for the night. The next morning I was finally able to get the jar opened and I was excited to start using the product. Upon opening the jar and removing the plastic protector I was immediately put off by the extreme scent of roses. I am not opposed to fragrance in skincare at all and I actually enjoy the scent of roses but the scent is overwhelming in my opinion. I suffer from migraines and over the top fragrance can trigger reactionary migraines for me. I am happy to report that even though it is extremely fragranced this product did not cause any reactionary migraines. The cream is thick,  luxurious and absorbed into the skin well. Even though the cream is thicker in consistency you do not need much of the product to cover your face, neck and d\u00e9colletage. I did experience some pilling when combined with my other serums with this product so I stopped using it at night and used only in the morning without using my essence, serums or oils. I did not notice any significant reduction in wrinkles or firmness or the skin. I did notice a boost in radiance of my skin but honestly this is not enough to repurchase sadly.",
+     "kept": [
+      {
+       "belief": "The brand missed an opportunity to provide a convenient and sanitary storage solution for the spatula.",
+       "feeling": "frustrated",
+       "intention": "stop buying",
+       "topic": "packaging",
+       "evidence": "If you are going to go through the trouble of providing a spatula please provide a place in the cap to store it for easy access to it as well as to keep it sanitary.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I am sad to say, this is pretty much your standard moisturizer. I have other Door skin products I love but unfortunately this didn\u2019t do what it claimed. I used it religiously and my skin was hydrated but it didn\u2019t do much in the way of radiance, help with fine lines etc.",
+     "kept": [
+      {
+       "belief": "The product is just an average moisturizer, not a miracle product.",
+       "feeling": "neutral",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "my skin was hydrated but it didn\u2019t do much in the way of radiance, help with fine lines etc.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "The fragrance was a bit strong , the cream is very light weight though. I have only been using it at night , but my skin does feel softer , not sure I notice less fine lines or not though. A little goes a long way so it will last a while.",
+     "kept": [
+      {
+       "belief": "The fragrance is too strong.",
+       "feeling": "disappointed",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "not sure I notice less fine lines or not though",
+       "valence": "mixed"
+      },
+      {
+       "belief": "The product is doing its job, but the results are subtle.",
+       "feeling": "satisfied",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "my skin does feel softer, not sure I notice less fine lines or not though",
+       "valence": "mixed"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "So if you late not a fan of fragrance then I would slip out on this product. It is heavily fragranced and I am not a big fan of the scent. Overall I did notice a difference in the appearance of my face while using this. It had a more smoother appearance and seem a lot more moisturized. I have combo skin and tend to run on the drier side during winter, I only used this product at night. Even though it absorbed into the skin well and didn\u2019t leave a greasy feel. I just felt more comfortable using at night then during the day under makeup. I would totally recommend this product if it is something that is in your price point and you don\u2019t mind fragrance.",
+     "kept": [
+      {
+       "belief": "The product's scent is unpleasant.",
+       "feeling": "disappointed",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "I did notice a difference in the appearance of my face while using this. It had a more smoother appearance and seem a lot more moisturized.",
+       "valence": "praise"
+      },
+      {
+       "belief": "The product works well for moisturizing and smoothing the skin, but the scent is a drawback.",
+       "feeling": "mildly satisfied",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "It had a more smoother appearance and seem a lot more moisturized.",
+       "valence": "praise"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "Good but not amazing for the price. It has a very strong scent so if you\u2019re not into that you will not like it. It is thick but goes on nicely and sinks in so you don\u2019t feel like you have a heavy layer on your face. I woke up and seemed like I had brighter skin but a few days later it seemed it made me break out a little.",
+     "kept": [
+      {
+       "belief": "The product's scent is overpowering.",
+       "feeling": "uncomfortable",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "I woke up and seemed like I had brighter skin but a few days later it seemed it made me break out a little.",
+       "valence": "mixed"
+      },
+      {
+       "belief": "The product is not worth the price, but it has some good qualities.",
+       "feeling": "mixed",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "I woke up and seemed like I had brighter skin but a few days later it seemed it made me break out a little.",
+       "valence": "mixed"
+      },
+      {
+       "belief": "The product makes skin appear brighter, but it also breaks out some users.",
+       "feeling": "hopeful",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "I woke up and seemed like I had brighter skin",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I received this complimentary to try from Influenster. Honestly, I really wanted to love this and expected so much strictly because of the brand name. Giving this a fair test, I only used it and my makeup remover/ cleanser nightly. I applied the cream 2xs a day as directed for the past month. For reference, I have used very high end skin creams in the past. The brands are considered luxury by most. As far as the cream\u2019s performance it did not \u201c wow me\u201c. Sure it felt amazing , and it made my skin feel nice and supple, however at this price point it should. It did make my face seem hydrated. As far as fine lines go, I do have a few lines around my eye area. I do not have many. It did help possible a little bit. This cream did not give me the \u201c foutain of youth\u201c. The one big thing that I disliked was the packaging. I hated the \u201c spatula\u201c that Dior used . For this price, putting a plastic spoon took away from its elegance overall. I hated that I had to place the spoon under the lid nightly. It was not a good design. Comparing this to the Tatcha brand which is cheaper the design is much better. Tatcha has a holder at the top and is with a metal spoon where Dior\u2019s  is just a plastic spatula. Dior is supposed to be a brand that is Luxe and this cream just did not scream all 5 stars. For the smell, it was not overpowering like I exoected. It was lightweight. A little bit of cream does go a long way. I did like using this, but I would not purchase it even though I am able. It does not set itself apart from the rest. A brand name cream at this price point should be amazing all around. This is not. I cannot recommend this based on price.",
+     "kept": [
+      {
+       "belief": "The product is okay, but not impressive enough to justify its luxury brand name.",
+       "feeling": "meh",
+       "intention": "undecided",
+       "topic": "results",
+       "evidence": "it did not \u201c wow me\u201d",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I received this product for free for my honest review from Influenster.  I\u2019m not one to blow smoke, so I won\u2019t.  I have not seen a reduction in the fine lines around my eyes. But I have seen an INCREASE in OIL production.  I have oily skin. And this product seems to make my skin think its dry. I\u2019m not a fan and $100+ is too much for something to not work. I will pay for a product if it works, but it doesn\u2019t.",
+     "kept": [
+      {
+       "belief": "Capture Totale Firming & Wrinkle-Correcting Cream does not reduce fine lines around the eyes effectively.",
+       "feeling": "disappointed",
+       "intention": "stop buying",
+       "topic": "results",
+       "evidence": "I have not seen a reduction in the fine lines around my eyes. ",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "This face cream has a lovely texture, absorbed well into my very dry skin and did not pill nor otherwise seen to interact poorly with my usual serums, Rx tretinoin/niacinimide, nor 3 different Herbivore facial oils. At first it was a real treat to use - very decedent! I mean, it\u2019s Dior! My HG foundation is Forever Skin Glow. I adore J\u2019adore! Sadly, this was one fragrance that I soon became sensitive to - my skin was fine but my previously nonexistent allergies became a problem.",
+     "kept": [
+      {
+       "belief": "The scent of Capture Totale Firming & Wrinkle-Correcting Cream is too strong.",
+       "feeling": "disappointed",
+       "intention": "stop buying",
+       "topic": "scent",
+       "evidence": "Sadly, this was one fragrance that I soon became sensitive to - my skin was fine but my previously nonexistent allergies became a problem.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    }
+   ],
+   "priority_table": [
+    {
+     "topic": "results",
+     "reviews": 6,
+     "share_%": 40,
+     "priority": "High",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 1,
+     "complaints": 5,
+     "examples": [
+      "The product is just an average moisturizer, not a miracle product.",
+      "The fragrance is too strong.",
+      "The product is doing its job, but the results are subtle."
+     ],
+     "quotes": [
+      "my skin was hydrated but it didn\u2019t do much in the way of radiance, help with fine lines etc.",
+      "not sure I notice less fine lines or not though",
+      "my skin does feel softer, not sure I notice less fine lines or not though"
+     ]
+    },
+    {
+     "topic": "texture",
+     "reviews": 2,
+     "share_%": 13,
+     "priority": "Medium",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 1,
+     "complaints": 1,
+     "examples": [
+      "The product has a pilling problem"
+     ],
+     "quotes": [
+      "the product has a pilling problem"
+     ]
+    },
+    {
+     "topic": "irritation",
+     "reviews": 2,
+     "share_%": 13,
+     "priority": "Medium",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 1,
+     "complaints": 2,
+     "examples": [
+      "I'm not sure if this cream is worth the price",
+      "Dior Capture Totale is a good addition to a skincare routine."
+     ],
+     "quotes": [
+      "I feel like it moisturized my skin well but I also saw an increase in breakouts.",
+      "At first, my face reacted with a little breakout, but after a few days, it settled back down."
+     ]
+    },
+    {
+     "topic": "scent",
+     "reviews": 1,
+     "share_%": 7,
+     "priority": "Low",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 1,
+     "complaints": 1,
+     "examples": [
+      "The scent of Capture Totale Firming & Wrinkle-Correcting Cream is too strong."
+     ],
+     "quotes": [
+      "Sadly, this was one fragrance that I soon became sensitive to - my skin was fine but my previously nonexistent allergies became a problem."
+     ]
+    },
+    {
+     "topic": "packaging",
+     "reviews": 1,
+     "share_%": 7,
+     "priority": "Low",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 1,
+     "complaints": 1,
+     "examples": [
+      "The brand missed an opportunity to provide a convenient and sanitary storage solution for the spatula."
+     ],
+     "quotes": [
+      "If you are going to go through the trouble of providing a spatula please provide a place in the cap to store it for easy access to it as well as to ke"
+     ]
+    },
+    {
+     "topic": "hydration",
+     "reviews": 1,
+     "share_%": 7,
+     "priority": "Low",
+     "risk_of_losing_customer": "High",
+     "decided": 3,
+     "complaints": 1,
+     "examples": [
+      "Dior's product line is too inconsistent",
+      "This cream is too moisturizing for my skin",
+      "This cream is too expensive for the amount of product"
+     ],
+     "quotes": [
+      "I feel like it moisturized my skin well"
+     ]
+    }
+   ],
+   "briefing": [
+    {
+     "topic": "results",
+     "priority": "High",
+     "risk": "Unclear",
+     "decided": 1,
+     "reviews": 6,
+     "quotes": [
+      "my skin was hydrated but it didn\u2019t do much in the way of radiance, help with fine lines etc.",
+      "not sure I notice less fine lines or not though",
+      "my skin does feel softer, not sure I notice less fine lines or not though"
+     ],
+     "mindset": "Customers expect a more significant visible reduction in wrinkles and fine lines, but instead, they experience subtle benefits and are unsure of the product's effectiveness.",
+     "action": "Offer a new, more intense formula that visibly reduces wrinkles and fine lines within a shorter timeframe, such as 2-3 weeks, to align with customer expectations.",
+     "confidence": "Low",
+     "needs_human_review": true,
+     "comment": "Remove details the customers never mentioned: 3 weeks."
+    },
+    {
+     "topic": "irritation",
+     "priority": "Medium",
+     "risk": "Unclear",
+     "decided": 1,
+     "reviews": 2,
+     "quotes": [
+      "I feel like it moisturized my skin well but I also saw an increase in breakouts.",
+      "At first, my face reacted with a little breakout, but after a few days, it settled back down."
+     ],
+     "mindset": "Customers expect a luxurious, high-end product that delivers results without causing irritation, but some experience breakouts, burning, or redness after using the product.",
+     "action": "Offer a smaller, travel-sized version of the product that is less likely to cause irritation, or introduce a 'sensitive skin' formula with a gentler, more soothing texture.",
+     "confidence": "Medium",
+     "needs_human_review": false,
+     "comment": "The advice suggests a product modification to address irritation."
+    }
+   ]
+  },
+  "Cica Recover & Repair Multi-Use Balm": {
+   "reviews": [
+    "At first I wasn\u2019t a fan of it because it smelled like paint or glue to me but after rubbing it on my skin I could smell the chamomile. This balm is however moisturizing without feeling too thick, after application my skin feels smooth without feeling like I put on thick lotion. I do find that it\u2019s a bit too pricey to use all over my body so I would just limit it to my face and hands. Overall I find it okay, I like that it\u2019s formulated without synthetic fragrances but just not worth the price.",
+    "I like this cica multi-use balm but I don\u2019t love it. It does the job well of calming and hydrating the skin, however, I don\u2019t think it\u2019s worth the price tag. I think I would reach for other high end skincare products first. It does hydrate and soothe the skin nicely, and I enjoy using it as the last step in my nighttime skincare routine. I apply a dime sized amount to my face and neck to lock in moisture. It worked well in calming my skin after have sensitivity due to retinol. I don\u2019t apply too much because the balm texture can become sticky if too much product is applied. I also like using it as a mask, applying a thick layer for 10 mins then wiping away the excess. Since it is Dior skincare, I wish there was a nice scent to the product for more of a luxurious experience.",
+    "I sampled this moisturizer for free through Influenster. I used it exclusively over a scar on my back from a recent mole removal. I guess for the price of this product I was expecting more of a miracle in the reduction of redness at my scar, so I was a bit disappointed. I will say, if you\u2019re in the market for cream that\u2019s non-greasy and suitable for sensitive skin, this is the one. I just couldn\u2019t personally justify the price to buy for myself.",
+    "It is a little too heavy for my face but I love it on my neck ,chest and hands!",
+    "The Dior Cica Recover & Repair Multi-use Balm is a good cream for face and body. I received a tube to try from Influenster. I used the cream on my dry arms and as a night cream before going to bed. It hydrated my face and arms and did not leave a greasy residue. The cream has no detectable scent. For the price, I feel this cream is too expensive to use on the body. There are so many other body creams and lotions that can moisturize for less money. That is why I gave it three stars. I will probably use this as my next night cream. Otherwise it is a nice cream.",
+    "I use this throughout the day on my hands, and I think it does a good job moisturizing in the short term, but I don\u2019t think it helps with lasting moisture. Would recommend for a less dry area of the body that doesn\u2019t need as intense moisturizing.",
+    "I have normal skin with very occasional slight dryness so was interested in trying this product. Overall, I liked it. It did provide  moisturization but for me it was a bit too much. It felt like a very thick cream. I did not notice a scent to it but that is fine. I would recommend this product for someone with much drier skin than mine.",
+    "I used Dior\u2019s Cica Recover and Repair Multiuse Balm for 2 weeks while stopping all other skincare to fairly assess its strengths. My first impression of the minimalist packaging and tube was that it might be a no nonsense, highly effective product. It has a very mild gentle fragrance which may come specifically from its ingredients and not added perfumes and dyes. I have some sensitivity and hyperpigmentation issues from reactions occasionally, so this was much appreciated. The cream itself is balmy in texture, but spreads easily and doesn\u2019t leave a greasy feel behind. A little doesn\u2019t go a long way, and I needed about 2 large pea size dollops to cover my whole face and neck. It spread easily and sank in without leaving a greasy film, but I didn\u2019t feel that it moisturized extraordinarily well. It was good nevertheless, and my skin felt adequately soft while I wore it. It also seemed to calm some rashes and irritation i developed from a new cleanser last week. With the Dior name, the minimalist packaging and quality ingredients I expected this cream to blow me out of the water. Perhaps my expectations were a little high. With those managed, I would say this is a good if not great moisturizer.",
+    "I received this product from Influenster in exchange for my honest review and let me tell you, if I had paid $60 for this cream I would\u2019ve been returning. I love the minimalistic bottle design, good size, fits in all of my purses. It does have like a really clean scent that you can bearly notice and I like that. BUT I just feel that it doesn\u2019t work for dryness. I have really dry hands and when I put it in I do feel my skin soft but it\u2019s like a glove sensation because if I move my hand I still can feel the dryness underneath. WEIRD. This is perfect just for the daily use like any other cream but fancier and maybe TO PREVENT dryness. You can use it on top of you moisturizer.",
+    "I received this product from Influenster in exchange for my honest review. This was up against another long-standing moisture surge cream that I have been using and ultimately, the original one just won out. After using this Dior balm for a few days I woke up with a dry, flaky red patch on my cheek which was something I was able to avoid all winter prior to switching from my old product to this new one. This may have been a coincidence, hence the 3 stars, but ultimately I would not buy this product again as I have another one that is just more effective.",
+    "This cream is scented and thick. This is definitely for someone with drier skin. I don\u2019t have a use for it in my routine. However, I could see where it would be useful.",
+    "Smells really good, is not overpowering. Feels good on skin but for face I believe it\u2019s too thick and made me break out a little may be because of odor or the thickness but other than that it is an ok cream.",
+    "A little goes a long way and it felt great on my skin. However, I did not like the smell and I broke out the next day I used it around my jaw line which is where I applied it.",
+    "The product does it job. Moisturize my skin for long periods of time. Also suitable for sensitive skin and body  Plus its fragrance free . I would recommend!",
+    "I would definitely recommend this as a night creamer because it is very thick so I wouldn\u2019t recommend you wear it under your make up. For a night creamer itis great! Super moisturizing and feels great on my skin."
+   ],
+   "results": [
+    {
+     "review": "At first I wasn\u2019t a fan of it because it smelled like paint or glue to me but after rubbing it on my skin I could smell the chamomile. This balm is however moisturizing without feeling too thick, after application my skin feels smooth without feeling like I put on thick lotion. I do find that it\u2019s a bit too pricey to use all over my body so I would just limit it to my face and hands. Overall I find it okay, I like that it\u2019s formulated without synthetic fragrances but just not worth the price.",
+     "kept": [
+      {
+       "belief": "The balm's price is a minor concern for occasional use.",
+       "feeling": "neutral",
+       "intention": "undecided",
+       "topic": "price",
+       "evidence": "I find it okay, I like that it\u2019s formulated without synthetic fragrances but just not worth the price",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I like this cica multi-use balm but I don\u2019t love it. It does the job well of calming and hydrating the skin, however, I don\u2019t think it\u2019s worth the price tag. I think I would reach for other high end skincare products first. It does hydrate and soothe the skin nicely, and I enjoy using it as the last step in my nighttime skincare routine. I apply a dime sized amount to my face and neck to lock in moisture. It worked well in calming my skin after have sensitivity due to retinol. I don\u2019t apply too much because the balm texture can become sticky if too much product is applied. I also like using it as a mask, applying a thick layer for 10 mins then wiping away the excess. Since it is Dior skincare, I wish there was a nice scent to the product for more of a luxurious experience.",
+     "kept": [
+      {
+       "belief": "The product is effective but not worth the premium",
+       "feeling": "mildly satisfied",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "It does the job well of calming and hydrating the skin",
+       "valence": "praise"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I sampled this moisturizer for free through Influenster. I used it exclusively over a scar on my back from a recent mole removal. I guess for the price of this product I was expecting more of a miracle in the reduction of redness at my scar, so I was a bit disappointed. I will say, if you\u2019re in the market for cream that\u2019s non-greasy and suitable for sensitive skin, this is the one. I just couldn\u2019t personally justify the price to buy for myself.",
+     "kept": [
+      {
+       "belief": "The product doesn't significantly reduce redness at scars.",
+       "feeling": "disappointed",
+       "intention": "stop buying",
+       "topic": "results",
+       "evidence": "I guess for the price of this product I was expecting more of a miracle in the reduction of redness at my scar, so I was a bit disappointed.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "It is a little too heavy for my face but I love it on my neck ,chest and hands!",
+     "kept": [
+      {
+       "belief": "The product's texture and consistency is a good match for the neck, chest, and hands.",
+       "feeling": "positive",
+       "intention": "buy again",
+       "topic": "texture",
+       "evidence": "It is a little too heavy for my face",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "The Dior Cica Recover & Repair Multi-use Balm is a good cream for face and body. I received a tube to try from Influenster. I used the cream on my dry arms and as a night cream before going to bed. It hydrated my face and arms and did not leave a greasy residue. The cream has no detectable scent. For the price, I feel this cream is too expensive to use on the body. There are so many other body creams and lotions that can moisturize for less money. That is why I gave it three stars. I will probably use this as my next night cream. Otherwise it is a nice cream.",
+     "kept": [
+      {
+       "belief": "Dior Cica Recover & Repair Multi-use Balm is effective for face and body",
+       "feeling": "positive",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "hydrated my face and arms",
+       "valence": "praise"
+      },
+      {
+       "belief": "The price of Dior Cica Recover & Repair Multi-use Balm is too high",
+       "feeling": "disappointed",
+       "intention": "stop buying",
+       "topic": "price",
+       "evidence": "For the price, I feel this cream is too expensive to use on the body.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I use this throughout the day on my hands, and I think it does a good job moisturizing in the short term, but I don\u2019t think it helps with lasting moisture. Would recommend for a less dry area of the body that doesn\u2019t need as intense moisturizing.",
+     "kept": [
+      {
+       "belief": "The product doesn't provide lasting moisture benefits",
+       "feeling": "disappointed",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "I think it does a good job moisturizing in the short term, but I don\u2019t think it helps with lasting moisture.",
+       "valence": "problem"
+      },
+      {
+       "belief": "The product is okay but not perfect for dry hands",
+       "feeling": "neutral",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "I think it does a good job moisturizing in the short term",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I have normal skin with very occasional slight dryness so was interested in trying this product. Overall, I liked it. It did provide  moisturization but for me it was a bit too much. It felt like a very thick cream. I did not notice a scent to it but that is fine. I would recommend this product for someone with much drier skin than mine.",
+     "kept": [
+      {
+       "belief": "The product is too moisturizing for normal skin.",
+       "feeling": "disappointed",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "It did provide moisturization but for me it was a bit too much.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I used Dior\u2019s Cica Recover and Repair Multiuse Balm for 2 weeks while stopping all other skincare to fairly assess its strengths. My first impression of the minimalist packaging and tube was that it might be a no nonsense, highly effective product. It has a very mild gentle fragrance which may come specifically from its ingredients and not added perfumes and dyes. I have some sensitivity and hyperpigmentation issues from reactions occasionally, so this was much appreciated. The cream itself is balmy in texture, but spreads easily and doesn\u2019t leave a greasy feel behind. A little doesn\u2019t go a long way, and I needed about 2 large pea size dollops to cover my whole face and neck. It spread easily and sank in without leaving a greasy film, but I didn\u2019t feel that it moisturized extraordinarily well. It was good nevertheless, and my skin felt adequately soft while I wore it. It also seemed to calm some rashes and irritation i developed from a new cleanser last week. With the Dior name, the minimalist packaging and quality ingredients I expected this cream to blow me out of the water. Perhaps my expectations were a little high. With those managed, I would say this is a good if not great moisturizer.",
+     "kept": [],
+     "needs_human_review": true
+    },
+    {
+     "review": "I received this product from Influenster in exchange for my honest review and let me tell you, if I had paid $60 for this cream I would\u2019ve been returning. I love the minimalistic bottle design, good size, fits in all of my purses. It does have like a really clean scent that you can bearly notice and I like that. BUT I just feel that it doesn\u2019t work for dryness. I have really dry hands and when I put it in I do feel my skin soft but it\u2019s like a glove sensation because if I move my hand I still can feel the dryness underneath. WEIRD. This is perfect just for the daily use like any other cream but fancier and maybe TO PREVENT dryness. You can use it on top of you moisturizer.",
+     "kept": [
+      {
+       "belief": "The product is not effective for dry hands.",
+       "feeling": "frustrated",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "I do feel my skin soft but it\u2019s like a glove sensation because if I move my hand I still ca",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I received this product from Influenster in exchange for my honest review. This was up against another long-standing moisture surge cream that I have been using and ultimately, the original one just won out. After using this Dior balm for a few days I woke up with a dry, flaky red patch on my cheek which was something I was able to avoid all winter prior to switching from my old product to this new one. This may have been a coincidence, hence the 3 stars, but ultimately I would not buy this product again as I have another one that is just more effective.",
+     "kept": [
+      {
+       "belief": "The product is gentle and suitable for my skin type, but didn't meet my expectations",
+       "feeling": "neutral",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "I was able to avoid all winter prior to switching from my old product to this new one.",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "This cream is scented and thick. This is definitely for someone with drier skin. I don\u2019t have a use for it in my routine. However, I could see where it would be useful.",
+     "kept": [],
+     "needs_human_review": true
+    },
+    {
+     "review": "Smells really good, is not overpowering. Feels good on skin but for face I believe it\u2019s too thick and made me break out a little may be because of odor or the thickness but other than that it is an ok cream.",
+     "kept": [
+      {
+       "belief": "The product is not worth buying again.",
+       "feeling": "neutral",
+       "intention": "stop buying",
+       "topic": "irritation",
+       "evidence": "may be because of odor or the thickness but other than that it is an ok cream",
+       "valence": "problem"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "A little goes a long way and it felt great on my skin. However, I did not like the smell and I broke out the next day I used it around my jaw line which is where I applied it.",
+     "kept": [
+      {
+       "belief": "The product's results vary by individual and skin type",
+       "feeling": "mixed",
+       "intention": "undecided",
+       "topic": "irritation",
+       "evidence": "However, I did not like the smell and I broke out the next day I used it around my jaw line",
+       "valence": "problem"
+      },
+      {
+       "belief": "A little goes a long way, the product is effective",
+       "feeling": "satisfied",
+       "intention": "buy again",
+       "topic": "hydration",
+       "evidence": "A little goes a long way and it felt great on my skin",
+       "valence": "praise"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "The product does it job. Moisturize my skin for long periods of time. Also suitable for sensitive skin and body  Plus its fragrance free . I would recommend!",
+     "kept": [
+      {
+       "belief": "The product is effective at moisturizing for long periods.",
+       "feeling": "satisfied",
+       "intention": "buy again",
+       "topic": "hydration",
+       "evidence": "Moisturize my skin for long periods of time",
+       "valence": "praise"
+      },
+      {
+       "belief": "The product is fragrance-free.",
+       "feeling": "neutral",
+       "intention": "undecided",
+       "topic": "irritation",
+       "evidence": "also suitable for sensitive skin",
+       "valence": "praise"
+      }
+     ],
+     "needs_human_review": false
+    },
+    {
+     "review": "I would definitely recommend this as a night creamer because it is very thick so I wouldn\u2019t recommend you wear it under your make up. For a night creamer itis great! Super moisturizing and feels great on my skin.",
+     "kept": [
+      {
+       "belief": "The product's thickness is a limitation for daytime use.",
+       "feeling": "neutral",
+       "intention": "undecided",
+       "topic": "hydration",
+       "evidence": "For a night creamer it is great! Super moisturizing and feels great on my skin.",
+       "valence": "praise"
+      }
+     ],
+     "needs_human_review": false
+    }
+   ],
+   "priority_table": [
+    {
+     "topic": "hydration",
+     "reviews": 9,
+     "share_%": 60,
+     "priority": "High",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 2,
+     "complaints": 4,
+     "examples": [
+      "The product doesn't provide lasting moisture benefits",
+      "The product is okay but not perfect for dry hands",
+      "The product is too moisturizing for normal skin."
+     ],
+     "quotes": [
+      "I think it does a good job moisturizing in the short term, but I don\u2019t think it helps with lasting moisture.",
+      "I think it does a good job moisturizing in the short term",
+      "It did provide moisturization but for me it was a bit too much."
+     ]
+    },
+    {
+     "topic": "irritation",
+     "reviews": 3,
+     "share_%": 20,
+     "priority": "Medium",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 1,
+     "complaints": 2,
+     "examples": [
+      "The product is not worth buying again.",
+      "The product's results vary by individual and skin type"
+     ],
+     "quotes": [
+      "may be because of odor or the thickness but other than that it is an ok cream",
+      "However, I did not like the smell and I broke out the next day I used it around my jaw line"
+     ]
+    },
+    {
+     "topic": "price",
+     "reviews": 2,
+     "share_%": 13,
+     "priority": "Medium",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 1,
+     "complaints": 2,
+     "examples": [
+      "The balm's price is a minor concern for occasional use.",
+      "The price of Dior Cica Recover & Repair Multi-use Balm is too high"
+     ],
+     "quotes": [
+      "I find it okay, I like that it\u2019s formulated without synthetic fragrances but just not worth the price",
+      "For the price, I feel this cream is too expensive to use on the body."
+     ]
+    },
+    {
+     "topic": "results",
+     "reviews": 1,
+     "share_%": 7,
+     "priority": "Low",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 1,
+     "complaints": 1,
+     "examples": [
+      "The product doesn't significantly reduce redness at scars."
+     ],
+     "quotes": [
+      "I guess for the price of this product I was expecting more of a miracle in the reduction of redness at my scar, so I was a bit disappointed."
+     ]
+    },
+    {
+     "topic": "texture",
+     "reviews": 1,
+     "share_%": 7,
+     "priority": "Low",
+     "risk_of_losing_customer": "Unclear",
+     "decided": 1,
+     "complaints": 1,
+     "examples": [
+      "The product's texture and consistency is a good match for the neck, chest, and hands."
+     ],
+     "quotes": [
+      "It is a little too heavy for my face"
+     ]
+    }
+   ],
+   "briefing": [
+    {
+     "topic": "hydration",
+     "priority": "High",
+     "risk": "Unclear",
+     "decided": 2,
+     "reviews": 9,
+     "quotes": [
+      "I think it does a good job moisturizing in the short term, but I don\u2019t think it helps with lasting moisture.",
+      "I think it does a good job moisturizing in the short term",
+      "It did provide moisturization but for me it was a bit too much."
+     ],
+     "mindset": "Customers believe the product doesn't provide lasting moisture benefits, expecting a product that hydrates for an extended period, not just temporarily.",
+     "action": "Create a more intense, long-lasting hydration formula that provides sustained moisture benefits, suitable for normal to dry skin types.",
+     "confidence": "High",
+     "needs_human_review": false,
+     "comment": "The advice proposes a clear formula change to enhance moisturizing benefits."
+    },
+    {
+     "topic": "irritation",
+     "priority": "Medium",
+     "risk": "Unclear",
+     "decided": 1,
+     "reviews": 3,
+     "quotes": [
+      "may be because of odor or the thickness but other than that it is an ok cream",
+      "However, I did not like the smell and I broke out the next day I used it around my jaw line"
+     ],
+     "mindset": "Customers believe the product causes irritation, such as breakouts and burning, and they expect a luxury product to not react with their skin, but the product's performance varies from one individual to another.",
+     "action": "Develop a fragrance-free version of the product to reduce the likelihood of allergic reactions and irritation caused by strong scents.",
+     "confidence": "Medium",
+     "needs_human_review": false,
+     "comment": "Developing a fragrance-free version directly addresses the issue of irritation."
+    },
+    {
+     "topic": "price",
+     "priority": "Medium",
+     "risk": "Unclear",
+     "decided": 1,
+     "reviews": 2,
+     "quotes": [
+      "I find it okay, I like that it\u2019s formulated without synthetic fragrances but just not worth the price",
+      "For the price, I feel this cream is too expensive to use on the body."
+     ],
+     "mindset": "Customers believe the price is too high, but feel it's somewhat justified by the product's performance, even if it's not worth the cost for some.",
+     "action": "Offer a smaller size or travel-sized version of the balm at a lower price point to make it more accessible to customers who want to try it without committing to the full-size product.",
+     "confidence": "Medium",
+     "needs_human_review": false,
+     "comment": "The advice changes the product by offering a smaller size."
+    }
+   ]
+  }
+ }
+}

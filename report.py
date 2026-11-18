@@ -222,6 +222,7 @@ def make_pdf(runs, meta, decisions, baseline):
         # advice cards
         if briefing:
             story.append(P("Recommended actions", h2))
+            story.append(P("Suggested actions are ideas for a human to review. Any detail in them that the customers did not write is the AI's suggestion, not a finding.", small))
         for item in briefing:
             info = decisions.get((name, item["topic"]))
             head = (f"{item['topic'].capitalize()}   |   Priority: {item['priority']}   |   Risk: {item['risk']}   |   "
@@ -229,6 +230,7 @@ def make_pdf(runs, meta, decisions, baseline):
             card = [[Paragraph(clean(head), ParagraphStyle("ch", parent=cell, fontName="Helvetica-Bold", textColor=colors.white))],
                     [[P("What customers believe: " + item["mindset"], cell), Spacer(1, 3),
                       P("Recommended action: " + item["action"], cell), Spacer(1, 3),
+                      P("Customers wrote: " + " | ".join(item.get("quotes") or []), small) if item.get("quotes") else Spacer(1, 0),
                       P("Validation check: " + item.get("comment", ""), small),
                       P(decision_text(info), ParagraphStyle("d", parent=cell, fontName="Helvetica-Bold", textColor=PLUM))]]]
             if item["needs_human_review"]:

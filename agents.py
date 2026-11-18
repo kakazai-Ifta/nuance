@@ -9,6 +9,7 @@ It contains the four agents plus the ranking step:
 """
 
 import json
+import re
 import ollama
 import pandas as pd
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
@@ -101,6 +102,7 @@ Give 2 explanations that are clearly DIFFERENT from each other:
 Do not invent facts that are not in the review.
 
 Rules:
+- Each "belief" must be about ONE single thing only (for example only the scent, or only the price, or only the results). Never mix several things in one belief.
 - "feeling" must be 1 or 2 lowercase words.
 - "intention" must be exactly one of: buy again, stop buying, undecided.
 
@@ -135,14 +137,15 @@ Question 2: Does the intention clearly CONTRADICT something the customer says? A
 Evidence: copy the customer's exact words that support the belief. Write "none" if there are none.
 Topic: the main topic of THIS belief. Choose exactly one of: {topic_names}.
 {topic_help}
+Valence: is this belief a "problem" the customer has, "praise" (the customer is happy about it), or "mixed"? Answer exactly one of: problem, praise, mixed.
 
 Example:
 Review: "It is fine overall, but the {example_topic} was a problem for me."
 Guess: the customer believes "The {example_topic} is a problem" and will "stop buying".
-Answer: {{{{"belief_supported": "yes", "intention_contradicts": "no", "evidence": "the {example_topic} was a problem for me", "topic": "{example_topic}"}}}}
+Answer: {{{{"belief_supported": "yes", "intention_contradicts": "no", "evidence": "the {example_topic} was a problem for me", "topic": "{example_topic}", "valence": "problem"}}}}
 
 Now answer for the guess above. Reply with JSON only, in exactly this format:
-{{"belief_supported": "yes or no", "intention_contradicts": "yes or no", "evidence": "words from the review", "topic": "{topic_names}"}}'''
+{{"belief_supported": "yes or no", "intention_contradicts": "yes or no", "evidence": "words from the review", "topic": "{topic_names}", "valence": "problem, praise, or mixed"}}'''
 
         answer = ask_llama(prompt)
 
@@ -153,7 +156,11 @@ Now answer for the guess above. Reply with JSON only, in exactly this format:
             answer["topic"] = "other"          # the model invented a topic: use "other"
         else:
             answer["topic"] = str(answer["topic"]).strip().lower()
-        answer["verdict"] = "keep" if (belief_ok and not contradiction) else "drop"
+        valence = str(answer.get("valence", "problem")).strip().lower()
+        answer["valence"] = valence if valence in ("problem", "praise", "mixed") else "problem"
+        # A guess with no words from the customer to back it up is invented, so it is dropped
+        evidence_ok = str(answer.get("evidence", "none")).strip().lower() not in ("", "none", "n/a")
+        answer["verdict"] = "keep" if (belief_ok and not contradiction and evidence_ok) else "drop"
         answer["hypothesis"] = number
         results.append(answer)
 
@@ -177,6 +184,7 @@ def analyse_review(review, product_info, brand_context, topics_text=DEFAULT_TOPI
                 "intention": guess["intention"],
                 "topic": item.get("topic", "other"),
                 "evidence": item.get("evidence", ""),
+                "valence": item.get("valence", "problem"),
             })
 
     # If nothing survived, flag the review for a human
@@ -200,25 +208,33 @@ def make_priority_table(results):
         reviews_with_topic = 0   # how many reviews mention this topic
         guesses = 0              # how many kept guesses are about this topic
         stop_buying = 0          # how many of those say "stop buying"
-        examples = []            # a few example beliefs
-        quotes = []              # a few of the customers' own words
+        buy_again = 0            # how many say "buy again"
+        examples = []            # a few example beliefs (problems and mixed feelings only)
+        quotes = []              # a few of the customers' own words (same)
+        complaint_reviews = 0    # reviews with a problem or mixed feeling about this topic
 
         for r in results:
             items = [item for item in r["kept"] if item["topic"] == topic]
             if len(items) > 0:
                 reviews_with_topic += 1
+            if any(item.get("valence", "problem") != "praise" for item in items):
+                complaint_reviews += 1
             for item in items:
                 guesses += 1
                 if item["intention"] == "stop buying":
                     stop_buying += 1
-                if len(examples) < 3:
+                if item["intention"] == "buy again":
+                    buy_again += 1
+                if item.get("valence", "problem") == "praise":
+                    continue          # praise is not something to fix
+                if len(examples) < 3 and item["belief"] not in examples:
                     examples.append(item["belief"])
-                quote = str(item.get("evidence", "")).strip()
-                if len(quotes) < 3 and quote != "" and quote.lower() != "none":
-                    quotes.append(quote[:150])
+                quote = str(item.get("evidence", "")).strip()[:150]
+                if len(quotes) < 3 and quote.lower() not in ("", "none") and quote not in quotes:
+                    quotes.append(quote)
 
         share = reviews_with_topic / total
-        stop_share = stop_buying / guesses
+        decided = stop_buying + buy_again      # guesses where the customer's plan is clear
 
         # Priority: how many reviews mention the topic
         if share >= 0.25:
@@ -228,10 +244,13 @@ def make_priority_table(results):
         else:
             priority = "Low"
 
-        # Risk: how many guesses say "stop buying"
-        if stop_share >= 0.5:
+        # Risk: among the guesses with a clear plan, how many say "stop buying".
+        # "undecided" says nothing about risk, so it is left out. Fewer than 3 clear guesses = not enough signal.
+        if decided < 3:
+            risk = "Unclear"
+        elif stop_buying / decided >= 0.5:
             risk = "High"
-        elif stop_share >= 0.25:
+        elif stop_buying / decided >= 0.25:
             risk = "Medium"
         else:
             risk = "Low"
@@ -242,11 +261,13 @@ def make_priority_table(results):
             "share_%": round(share * 100),
             "priority": priority,
             "risk_of_losing_customer": risk,
+            "decided": decided,
+            "complaints": complaint_reviews,
             "examples": examples,
             "quotes": quotes,
         })
 
-    columns = ["topic", "reviews", "share_%", "priority", "risk_of_losing_customer", "examples", "quotes"]
+    columns = ["topic", "reviews", "share_%", "priority", "risk_of_losing_customer", "decided", "complaints", "examples", "quotes"]
     if len(rows) == 0:
         return pd.DataFrame(columns=columns)
     return pd.DataFrame(rows).sort_values("reviews", ascending=False).reset_index(drop=True)
@@ -255,89 +276,173 @@ def make_priority_table(results):
 # ---------------------------------------------------------------
 # Writing the advice, then Agent 4: Validation
 # ---------------------------------------------------------------
-def write_action(topic, examples, product_info, brand_context, quotes=None):
+def write_action(topic, examples, product_info, brand_context, quotes=None,
+                 topic_definition="", feedback="", others=""):
     quotes = quotes or []
+    retry = f"\nYour previous advice was rejected: {feedback}\nWrite a different, better action.\n" if feedback else ""
     prompt = f'''You advise a brand manager.
 Product: {product_info}
 Brand context: {brand_context}
-Topic: {topic}
-What customers believe about this topic:
+Topic: {topic} ({topic_definition})
+What customers believe (some may be about other topics, ignore those):
 {json.dumps(examples)}
 What customers actually wrote:
 {json.dumps(quotes)}
-
-Write two short sentences:
-- mindset: what customers with this topic believe, and what went wrong or what they expected, in plain words.
-- action: one concrete change that fixes the problem customers describe. Name the specific thing to change, build or write.
-  Good examples: "Add a 4-week results guide to the product page." or "Replace the plastic hinge with a metal hinge."
-  Do not answer with only marketing, testimonials, trust or transparency.
+Other complaints about this product (your advice must NOT make these worse): {others or "none"}
+{retry}
+Write two short sentences, ONLY about the topic "{topic}":
+- mindset: what customers believe about "{topic}", and what went wrong or what they expected, in plain words. Do not talk about other topics.
+- action: one concrete change to the PRODUCT ITSELF that fixes the problem. It must change the formula, texture, scent, packaging, size, applicator, price or product range.
+  Good examples: "Offer a lighter, gel-cream version of the formula." or "Replace the plastic hinge with a metal hinge."
+  Do NOT name ingredients, sizes, numbers or packaging parts unless they appear in what customers wrote or in the brand context. Describe the change in general words (for example "a gentler formula", "a bigger size").
+  NOT allowed: photo galleries, progress trackers, guides, warning labels, website content, marketing, testimonials, trust or transparency.
 
 Reply with JSON only, in exactly this format:
 {{"mindset": "one sentence", "action": "one sentence"}}'''
     return ask_llama(prompt)
 
 
-def validate_action(topic, mindset, action):
+def validate_action(topic, mindset, action, topic_definition="", others=""):
     prompt = f'''You check advice given to a brand manager.
-Topic: {topic}
+Topic: {topic} ({topic_definition})
 What customers believe: {mindset}
 Advice: {action}
 
-Question 1: Does the advice directly address the topic "{topic}"? Answer yes or no.
-Question 2: Does the advice name a specific thing to change, build or write, which fixes the problem customers describe? Answer no if it is vague (for example "improve quality", "increase transparency", "build trust") or only promotes the product (a marketing campaign, testimonials). Answer yes or no.
+Question 1: Is the advice about the topic "{topic}" and not about a different topic (for example scent or packaging advice under "hydration" is no)? Answer yes or no.
+Question 2: Does the advice name a specific thing to change, build or write? Answer no if it is vague (for example "improve quality", "increase transparency", "build trust"). Answer yes or no.
+Question 3: Does the advice change the product itself (formula, texture, scent, packaging, size, applicator, price, product range)? Answer no if it only adds information or marketing (a gallery, tracker, guide, warning label, website text, campaign). Answer yes or no.
+Question 4: Could the advice make one of these other customer complaints worse: {others or "none"}? (For example a stronger active ingredient can worsen irritation, a richer formula can worsen a greasy feel.) Answer yes or no.
 Comment: one short sentence explaining your answers.
 
 Example:
 Topic: durability
 What customers believe: The handle breaks after a week.
 Advice: Switch the handle to a stronger plastic and test it before shipping.
-Answer: {{"addresses_topic": "yes", "specific_and_doable": "yes", "comment": "The advice targets the weak handle and is concrete."}}
+Answer: {{"addresses_topic": "yes", "specific_and_doable": "yes", "changes_product": "yes", "makes_other_worse": "no", "comment": "The advice targets the weak handle and is concrete."}}
 
 Example:
 Topic: results
 What customers believe: The cream does not give the promised results.
-Advice: Increase transparency to build trust.
-Answer: {{"addresses_topic": "yes", "specific_and_doable": "no", "comment": "The advice is vague and names no concrete change."}}
+Advice: Add a before-and-after photo gallery to the product page.
+Answer: {{"addresses_topic": "yes", "specific_and_doable": "yes", "changes_product": "no", "makes_other_worse": "no", "comment": "A gallery is marketing and does not change the product."}}
 
 Now answer for the advice above. Reply with JSON only, in exactly this format:
-{{"addresses_topic": "yes or no", "specific_and_doable": "yes or no", "comment": "one short sentence"}}'''
+{{"addresses_topic": "yes or no", "specific_and_doable": "yes or no", "changes_product": "yes or no", "makes_other_worse": "yes or no", "comment": "one short sentence"}}'''
     return ask_llama(prompt)
 
 
-def make_briefing(priority_table, product_info, brand_context, how_many=3):
-    briefing = []
+_INGREDIENTS = ["retinol", "peptide", "caffeine", "niacinamide", "vitamin", "aloe", "green tea", "hyaluronic",
+                "ceramide", "collagen", "squalane", "glycerin", "salicylic", "glycolic", "shea", "centella",
+                "chamomile", "antioxidant", "humectant", "emollient", "spf", "sunscreen", "oil-free"]
+_PARTS = ["jar", "pump", "tube", "bottle", "dropper", "spatula", "airless", "lid", "applicator", "sachet"]
+_NUMBER = re.compile(r"\d+(?:\.\d+)?\s?-?\s?(?:%|(?:ml|g|oz|hours?|hrs?|h|weeks?|days?|months?|x)\b)")
 
-    # The biggest real topics (leaving out the catch-all "other")
-    actionable = priority_table[priority_table["topic"] != "other"].head(how_many)
+
+def _ungrounded(text, allowed):
+    """Return the invented details in `text`: numbers with units, ingredients or packaging parts
+    that appear neither in the customers' words nor in the product / brand text."""
+    text, allowed = text.lower(), allowed.lower()
+    squashed = allowed.replace(" ", "").replace("-", "")
+    found = []
+    for match in _NUMBER.findall(text):
+        if match.replace(" ", "").replace("-", "") not in squashed:
+            found.append(match.strip())
+    for word in _INGREDIENTS + _PARTS:
+        if re.search(r"\b" + re.escape(word), text) and word not in allowed:
+            found.append(word)
+    return sorted(set(found))
+
+
+_GENERIC = {"effect", "visible", "skin", "feels", "product", "other", "customers", "anything", "fits", "none", "above"}
+
+
+def _on_topic(action, topic, definition):
+    """Plain-Python guard: the advice must use at least one word of its own topic.
+    (The small model sometimes says yes to advice about a different topic.)"""
+    words = [topic] + [w.strip(",.;:()\"'") for w in definition.lower().split()]
+    stems = {w[:5] for w in words if len(w) >= 5 and w not in _GENERIC}
+    text = action.lower()
+    return any(stem in text for stem in stems)
+
+
+def _checks_passed(check):
+    """Count the passed checks (0 to 5): the validator's 3 yes answers, "does not make another
+    complaint worse", and the Python check that no detail was invented."""
+    passed = sum(str(check.get(key, "no")).lower() == "yes"
+                 for key in ("addresses_topic", "specific_and_doable", "changes_product"))
+    passed += str(check.get("makes_other_worse", "no")).lower() != "yes"
+    passed += str(check.get("grounded", "yes")).lower() == "yes"
+    return passed
+
+
+def _check_advice(advice, topic, definition, others, allowed):
+    """Run the validator and the two plain-Python guards on one piece of advice."""
+    check = validate_action(topic, advice["mindset"], advice["action"], definition, others)
+    notes = []
+    if definition and not _on_topic(advice["action"], topic, definition):
+        check["addresses_topic"] = "no"
+        notes.append(f"The advice must be about {topic} ({definition}), not about another topic.")
+    invented = _ungrounded(advice["mindset"] + " " + advice["action"], allowed)
+    if invented:
+        check["grounded"] = "no"
+        notes.append("Remove details the customers never mentioned: " + ", ".join(invented) + ".")
+    if str(check.get("makes_other_worse", "no")).lower() == "yes":
+        notes.append("The advice could worsen another complaint (" + others + ").")
+    if notes:
+        check["comment"] = " ".join(notes)
+    return check
+
+
+def make_briefing(priority_table, product_info, brand_context, how_many=3, topics_text=DEFAULT_TOPICS):
+    briefing = []
+    topics = parse_topics(topics_text)
+
+    # The biggest real topics (leaving out the catch-all "other"), only where at least 2 reviews
+    # describe a problem. One review is not enough, and praise is not something to fix.
+    complaints = priority_table["complaints"] if "complaints" in priority_table.columns else priority_table["reviews"]
+    actionable = priority_table[(priority_table["topic"] != "other") & (complaints >= 2)].head(how_many)
 
     for i in actionable.index:
         row = actionable.loc[i]
-
+        topic = row["topic"]
+        definition = topics.get(topic, "")
         quotes = list(row["quotes"]) if "quotes" in row.index else []
-        advice = write_action(row["topic"], row["examples"], product_info, brand_context, quotes)
-        check = validate_action(row["topic"], advice["mindset"], advice["action"])
 
-        # Python counts the confidence points
-        score = 0
-        if str(check.get("addresses_topic", "no")).lower() == "yes":
-            score += 1
-        if str(check.get("specific_and_doable", "no")).lower() == "yes":
-            score += 1
-        if row["share_%"] >= 25:      # many reviews support this topic
-            score += 1
+        # The product's other complaints: the advice must not make them worse
+        rest = priority_table[(priority_table["topic"] != topic) & (priority_table["topic"] != "other")]
+        rest = rest[(rest["share_%"] >= 20) | (rest["risk_of_losing_customer"] == "High")]
+        others = ", ".join(f"{r['topic']} ({r['share_%']}% of reviews)" for _, r in rest.head(3).iterrows())
 
-        if score == 3:
+        # Words the advice may use: the customers' own words and the product / brand text
+        allowed = " ".join(quotes) + " " + product_info + " " + brand_context
+
+        advice = write_action(topic, row["examples"], product_info, brand_context, quotes, definition, "", others)
+        check = _check_advice(advice, topic, definition, others, allowed)
+        if _checks_passed(check) < 5:      # try once more, with the reasons
+            retry = write_action(topic, row["examples"], product_info, brand_context, quotes,
+                                 definition, check.get("comment", ""), others)
+            retry_check = _check_advice(retry, topic, definition, others, allowed)
+            if _checks_passed(retry_check) >= _checks_passed(check):
+                advice, check = retry, retry_check
+
+        # Confidence is counted by Python
+        passed = _checks_passed(check)
+        if str(check.get("grounded", "yes")).lower() == "no":
+            confidence = "Low"      # the advice still contains a detail the customers never mentioned
+        elif passed == 5 and row["share_%"] >= 25:
             confidence = "High"
-        elif score == 2:
+        elif passed >= 4:
             confidence = "Medium"
         else:
             confidence = "Low"
 
         briefing.append({
-            "topic": row["topic"],
+            "topic": topic,
             "priority": row["priority"],
             "risk": row["risk_of_losing_customer"],
+            "decided": int(row["decided"]) if "decided" in row.index else None,
             "reviews": int(row["reviews"]),
+            "quotes": quotes,
             "mindset": advice["mindset"],
             "action": advice["action"],
             "confidence": confidence,
