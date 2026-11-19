@@ -78,9 +78,134 @@ Speed: about 20 to 30 seconds per review. Use the slider (for example 5 reviews 
 - `.streamlit/config.toml`: colour theme.
 - `requirements.txt`: Python packages.
 
+
 ## Data
-Sephora product and skincare reviews (Kaggle). The full dataset is not included because it is over 100 MB. Any CSV with a
-review text column works.
+
+### 1. Data Sources
+
+Nuance uses the **Sephora Products and Skincare Reviews** dataset, available on Kaggle. The data consists of customer reviews and product metadata, including:
+
+- Customer review text
+- Star ratings (1–5)
+- Product and brand identifiers
+- Product names and related metadata
+
+The dataset enables the analysis of customer satisfaction, product-specific concerns, and recurring patterns in consumer feedback.
+
+**Source:** [Sephora Products and Skincare Reviews](https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews)
+
+The full dataset is not included in this repository due to its size.
+
+### 2. Data Preparation and Cleaning
+
+The data preprocessing pipeline involved the following steps:
+
+1. **Data consolidation:** Combined five customer review CSV files into a single dataset.
+2. **Metadata integration:** Merged the review data with product metadata using product identifiers.
+3. **Missing-value treatment:** Identified and removed observations with missing review text.
+4. **Exploratory analysis:** Examined rating distributions and product-level review counts.
+5. **Sample preparation:** Created smaller datasets for product-level analysis and model evaluation.
+
+#### Dataset Summary
+
+| Processing Stage | Number of Reviews |
+|---|---:|
+| Original combined dataset | 1,094,411 |
+| Reviews removed due to missing text | 1,444 |
+| Final cleaned dataset | 1,092,967 |
+
+The cleaning process retained approximately **99.87%** of the original reviews.
+
+### 3. Exploratory Data Analysis (EDA)
+
+Exploratory Data Analysis was conducted to investigate customer rating patterns and understand the limitations of using numerical ratings as the sole measure of customer satisfaction.
+
+#### Overall Rating Distribution
+
+| Rating Category | Percentage |
+|---|---:|
+| Positive (4–5 stars) | 82.08% |
+| Mid-range (3 stars) | 7.48% |
+| Negative (1–2 stars) | 10.44% |
+
+The distribution is heavily skewed toward positive ratings, with more than 82% of reviews receiving four or five stars.
+
+However, star ratings do not necessarily capture the complexity of customer experiences. A single review may express satisfaction with certain product attributes while highlighting dissatisfaction with others.
+
+For example, a customer may appreciate a moisturizer's lightweight texture but express concerns about its hydration performance or price.
+
+This motivates Nuance's approach of analysing **individual product attributes, mixed opinions, and underlying customer expectations**, rather than relying exclusively on aggregate star ratings.
+
+**Note:** These categories are based on numerical star ratings and should not be interpreted as independently validated text sentiment labels.
+
+### 4. Product-Level Case Study
+
+A subset of **9,080 reviews across five skincare products** was selected for further analysis.
+
+#### Selected Products
+
+| Brand | Product | Number of Reviews |
+|---|---|---:|
+| Dior | Capture Totale Firming & Wrinkle-Correcting Cream | 654 |
+| Dior | Capture Totale Super Potent Eye Serum | 1,092 |
+| Dior | Capture Totale Super Potent Rich Cream | 678 |
+| Dior | Cica Recover & Repair Multi-Use Balm | 611 |
+| Drunk Elephant | Protini Polypeptide Firming Refillable Moisturizer | 6,045 |
+| **Total** | | **9,080** |
+
+The selected products allow us to investigate differences in customer satisfaction and identify recurring product-level concerns.
+
+The deployed Nuance demo focuses on a smaller sample of Dior reviews and uses precomputed analysis results.
+
+### 5. Evaluation Dataset
+
+A **stratified diagnostic sample of 100 customer reviews** was constructed to evaluate Nuance's ability to interpret customer feedback across different rating categories.
+
+The sample includes 20 reviews from each of the five selected products.
+
+#### Sampling Strategy
+
+| Rating Category | Reviews per Product | Total Reviews |
+|---|---:|---:|
+| Negative (1–2 stars) | 4 | 20 |
+| Mid-range (3 stars) | 10 | 50 |
+| Positive (4–5 stars) | 6 | 30 |
+| **Total** | **20** | **100** |
+
+Three-star reviews were deliberately oversampled because they are particularly useful for investigating mixed customer opinions and identifying product attributes that numerical ratings may obscure.
+
+The evaluation sample is intended to assess whether Nuance can:
+
+- Identify relevant product topics and attributes.
+- Distinguish customer praise from complaints.
+- Recognise mixed sentiment within individual reviews.
+- Interpret customer expectations and stated intentions.
+- Generate recommendations supported by customer review evidence.
+
+This is a diagnostic sample rather than a statistically representative sample of the full dataset.
+
+AI-assisted reference annotations, where used, should be treated as provisional labels until independently verified. Quantitative performance metrics require comparison between Nuance outputs and matched reference annotations.
+
+### 6. Data Reproducibility
+
+The original Sephora dataset exceeds GitHub's standard file size limit and is therefore not included in the repository.
+
+To reproduce the data preparation process:
+
+1. Download the original Sephora review and product metadata files from Kaggle.
+2. Combine the five review CSV files.
+3. Merge the combined reviews with product metadata using product identifiers.
+4. Remove observations with missing review text.
+5. Examine rating distributions and product-level review counts.
+6. Select the relevant products and construct the stratified evaluation sample.
+
+The repository includes smaller demonstration files:
+
+- `sample_reviews.csv`: A sample of 40 three-star Dior reviews used for local testing.
+- `demo/dior_demo.json`: Precomputed results used by the deployed Streamlit demonstration.
+
+The full preprocessing and exploratory analysis notebooks should be provided alongside the repository if complete reproducibility is required.
+
 
 ## Limits
 - Small local model, and a limited sample (15 reviews per product in the demo, 3-star reviews of one brand), so topic
